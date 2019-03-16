@@ -1,0 +1,26 @@
+What time series?
+* Commodity prices, energy, agriculture, metals
+
+What do we investigate?
+* appropriate models fitted for commodity price time series
+* relationships among different time series, say crude oil vs natural gas (intra bucket), gold vs grains (inter bucket)
+* forecast future commodity prices to price corresponding futures and derivatives
+
+What model?
+* GARCH
+
+Why GARCH?
+* if AR —> ARCH: autoregressive conditional heteroskedasticity
+* if ARMA —> GARCH: generalized autoregressive conditional heteroskedasticity
+* closely related to our course
+
+What application?
+* option/future pricing
+* Asian Option: average option, path dependent, geometric/arithmetic average at discrete intervals, usually for commodities.
+* eg, call payoff = max(avg(S1, S2, S3, …) - K, 0)
+
+
+Data resource:
+* Yahoo finance
+* CME group
+
