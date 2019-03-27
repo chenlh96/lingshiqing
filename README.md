@@ -74,7 +74,7 @@ MAFS5130 Time series project
 
 Use ARE (Average Relative Error) criterion
  
-$ARE = \frac 1N \sum_{j=1}^N \frac {|V_j^{model} - V_j^{market}|}{V_j^{market}} \times 100$
+<img src="https://latex.codecogs.com/gif.latex?ARE = \frac 1N \sum_{j=1}^N \frac {|V_j^{model} - V_j^{market}|}{V_j^{market}} \times 100" />
  
 where N is the total number of options considered.
  
