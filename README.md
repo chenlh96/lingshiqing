@@ -74,7 +74,7 @@ MAFS5130 Time series project
 
 Use ARE (Average Relative Error) criterion
  
-<img src="https://latex.codecogs.com/gif.latex?ARE&space;=&space;\frac&space;1N&space;\sum_{j=1}^N&space;\frac&space;{|V_j^{model}&space;-&space;V_j^{market}|}{V_j^{market}}&space;\times&space;100" title="ARE = \frac 1N \sum_{j=1}^N \frac {|V_j^{model} - V_j^{market}|}{V_j^{market}} \times 100" />
+![equation](https://latex.codecogs.com/gif.latex?ARE&space;=&space;\frac&space;1N&space;\sum_{j=1}^N&space;\frac&space;{|V_j^{model}&space;-&space;V_j^{market}|}{V_j^{market}}&space;\times&space;100)
  
 where N is the total number of options considered.
  
