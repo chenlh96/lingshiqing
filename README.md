@@ -90,16 +90,16 @@ Need to find a (prevailing) market model to compare our model results.
 - Chu Song: CS
 - Leheng Chen: LC
  
-[JQ ] Step 1: preprocess underlying data and option market price data into two big dataframes.
+[JQ] Step 1: preprocess underlying data and option market price data into two big dataframes.
  
-[CS ] Step 2: create a function, to read one historical underlying price time series, and to find out the best GARCH model for it.
+[CS] Step 2: create a function, to read one historical underlying price time series, and to find out the best GARCH model for it.
  
-[CS, JQ] Step 3: derive correlation infomation (say correlations of prices/percentage changes, collinearity, etc., utilizing cleaned data) between two given historical underlying price time series, analyse the results and derive some conclusions regarding differenct commodity sectors.
+[CS JQ] Step 3: derive correlation infomation (say correlations of prices/percentage changes, collinearity, etc., utilizing cleaned data) between two given historical underlying price time series, analyse the results and derive some conclusions regarding differenct commodity sectors.
  
-[LS ] Step 4: create a function, input with GARCH model, commence date, expiry date, strike price, output fair price for the average price options.
+[LS] Step 4: create a function, input with GARCH model, commence date, expiry date, strike price, output fair price for the average price options.
  
-[LC ] Step 5: reproduce some prevailing pricing methods for average price options.
+[LC] Step 5: reproduce some prevailing pricing methods for average price options.
  
-[JQ ] Step 6: use ARE criterion to compare results between prevailing methods and GARCH method.
+[JQ] Step 6: use ARE criterion to compare results between prevailing methods and GARCH method.
 
-[TBD ] Step 7: calculate greeks (based on step 4 function), implied volatility curve (reverse pricing function, and using bisection method), etc.
+[TBD] Step 7: calculate greeks (based on step 4 function), implied volatility curve (reverse pricing function, and using bisection method), etc.
