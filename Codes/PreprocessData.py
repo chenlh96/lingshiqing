@@ -26,4 +26,4 @@ for file in files:
 
 data = pd.concat(dataList, sort=True, axis = 1)
 
-data.to_csv('data.csv')
+data.to_csv(os.path.join(path, 'Underlying Data.csv'))
