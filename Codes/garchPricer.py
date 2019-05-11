@@ -168,7 +168,7 @@ def garchPricer(startPrice, strikePrice, garchModel, repo, expBusDays, numPath):
     
     return output
 
-# Pricing Asian Option with fixed vol (Monte Carlo)   
+# Pricing Asian Option with fixed vol (Monte Carlo)
 def nonGarchPricer(startPrice, strikePrice, vol, repo, expBusDays, numPath):
     sumCallPrice = 0
     sumPutPrice = 0
