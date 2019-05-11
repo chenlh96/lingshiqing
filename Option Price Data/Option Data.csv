@@ -1,0 +1,320 @@
+﻿Matruity,DATE,Strike,Put Settle Price,Call Settle Price,Underlying
+Mar-19,29/3/2019,5600,0.01,2.05,Crude Oil WTI Futures
+Mar-19,29/3/2019,5645,0.01,1.6,Crude Oil WTI Futures
+Mar-19,29/3/2019,5650,0.01,1.55,Crude Oil WTI Futures
+Mar-19,29/3/2019,5700,0.01,1.05,Crude Oil WTI Futures
+Mar-19,29/3/2019,5750,0.02,0.57,Crude Oil WTI Futures
+Mar-19,29/3/2019,5800,0.14,0.19,Crude Oil WTI Futures
+Mar-19,29/3/2019,5850,0.48,0.03,Crude Oil WTI Futures
+Mar-19,29/3/2019,5900,0.95,0.01,Crude Oil WTI Futures
+Mar-19,29/3/2019,5950,1.45,0.01,Crude Oil WTI Futures
+Mar-19,29/3/2019,6000,1.95,0.01,Crude Oil WTI Futures
+Apr-19,30/4/2019,5700,0.67,2.78,Crude Oil WTI Futures
+Apr-19,30/4/2019,5750,0.81,2.41,Crude Oil WTI Futures
+Apr-19,30/4/2019,5800,0.97,2.07,Crude Oil WTI Futures
+Apr-19,30/4/2019,5850,1.15,1.76,Crude Oil WTI Futures
+Apr-19,30/4/2019,5900,1.36,1.47,Crude Oil WTI Futures
+Apr-19,30/4/2019,5950,1.6,1.21,Crude Oil WTI Futures
+Apr-19,30/4/2019,6000,1.87,0.99,Crude Oil WTI Futures
+Apr-19,30/4/2019,6050,2.18,0.79,Crude Oil WTI Futures
+Apr-19,30/4/2019,6100,2.51,0.63,Crude Oil WTI Futures
+Apr-19,30/4/2019,6150,2.87,0.49,Crude Oil WTI Futures
+Sep-19,30/9/2019,5850,3.73,5.91,Crude Oil WTI Futures
+Sep-19,30/9/2019,5900,3.93,5.62,Crude Oil WTI Futures
+Sep-19,30/9/2019,5950,4.13,5.33,Crude Oil WTI Futures
+Sep-19,30/9/2019,6000,4.35,5.05,Crude Oil WTI Futures
+Sep-19,30/9/2019,6050,4.57,4.78,Crude Oil WTI Futures
+Sep-19,30/9/2019,6100,4.8,4.52,Crude Oil WTI Futures
+Sep-19,30/9/2019,6125,4.92,4.39,Crude Oil WTI Futures
+Sep-19,30/9/2019,6150,5.04,4.26,Crude Oil WTI Futures
+Sep-19,30/9/2019,6160,5.09,4.22,Crude Oil WTI Futures
+Sep-19,30/9/2019,6175,5.17,4.14,Crude Oil WTI Futures
+Mar-20,31/3/2020,5700,5,7.53,Crude Oil WTI Futures
+Mar-20,31/3/2020,5750,5.2,7.24,Crude Oil WTI Futures
+Mar-20,31/3/2020,5800,5.4,6.95,Crude Oil WTI Futures
+Mar-20,31/3/2020,5850,5.61,6.67,Crude Oil WTI Futures
+Mar-20,31/3/2020,5900,5.83,6.4,Crude Oil WTI Futures
+Mar-20,31/3/2020,5950,6.05,6.14,Crude Oil WTI Futures
+Mar-20,31/3/2020,5975,6.16,6.01,Crude Oil WTI Futures
+Mar-20,31/3/2020,6000,6.28,5.88,Crude Oil WTI Futures
+Mar-20,31/3/2020,6050,6.51,5.63,Crude Oil WTI Futures
+Mar-20,31/3/2020,6100,6.75,5.38,Crude Oil WTI Futures
+Mar-21,31/3/2021,4500,2.97,14.03,Crude Oil WTI Futures
+Mar-21,31/3/2021,4950,4.35,11.11,Crude Oil WTI Futures
+Mar-21,31/3/2021,5000,4.52,10.81,Crude Oil WTI Futures
+Mar-21,31/3/2021,5100,4.88,10.21,Crude Oil WTI Futures
+Mar-21,31/3/2021,5200,5.25,9.63,Crude Oil WTI Futures
+Mar-21,31/3/2021,5500,6.43,7.94,Crude Oil WTI Futures
+Mar-21,31/3/2021,5575,6.75,7.54,Crude Oil WTI Futures
+Mar-21,31/3/2021,5975,8.63,5.6,Crude Oil WTI Futures
+Mar-21,31/3/2021,6000,8.76,5.5,Crude Oil WTI Futures
+Mar-21,31/3/2021,6500,11.65,3.61,Crude Oil WTI Futures
+Mar-22,31/3/2022,4950,5.38,10.76,Crude Oil WTI Futures
+Mar-22,31/3/2022,5100,5.93,9.91,Crude Oil WTI Futures
+Mar-22,31/3/2022,11000,51.49,0.22,Crude Oil WTI Futures
+Mar-23,31/3/2023,4950,6.2,10.61,Crude Oil WTI Futures
+Mar-23,31/3/2023,5100,6.77,9.81,Crude Oil WTI Futures
+Mar-23,31/3/2023,11000,51.43,0.35,Crude Oil WTI Futures
+Apr-19,30/4/2019,14000,0.0223,0.0473,Ethanol Futures
+Apr-19,30/4/2019,14500,0.084,0.0234,Ethanol Futures
+Apr-19,30/4/2019,15000,0.1156,0.01,Ethanol Futures
+Apr-19,30/4/2019,15500,0.152,0.0037,Ethanol Futures
+Apr-19,30/4/2019,16000,0.1923,0.0171,Ethanol Futures
+Apr-19,30/4/2019,16500,0.2354,0.0108,Ethanol Futures
+Jun-19,28/6/2019,12000,0.0039,0.2579,Ethanol Futures
+Jun-19,28/6/2019,12500,0.0087,0.2146,Ethanol Futures
+Jun-19,28/6/2019,13000,0.0169,0.1312,Ethanol Futures
+Jun-19,28/6/2019,13500,0.03,0.0946,Ethanol Futures
+Jun-19,28/6/2019,14000,0.0503,0.0652,Ethanol Futures
+Jun-19,28/6/2019,14500,0.0764,0.0443,Ethanol Futures
+Jun-19,28/6/2019,15000,0.1042,0.0296,Ethanol Futures
+Jun-19,28/6/2019,15500,0.1367,0.0192,Ethanol Futures
+Jun-19,28/6/2019,16000,0.1732,0.0307,Ethanol Futures
+Jun-19,28/6/2019,16500,0.213,0.0214,Ethanol Futures
+Sep-19,30/9/2019,11500,0.0071,0.3145,Ethanol Futures
+Sep-19,30/9/2019,12000,0.0118,0.2705,Ethanol Futures
+Sep-19,30/9/2019,12500,0.0192,0.229,Ethanol Futures
+Sep-19,30/9/2019,13000,0.0296,0.1907,Ethanol Futures
+Sep-19,30/9/2019,13500,0.0438,0.156,Ethanol Futures
+Sep-19,30/9/2019,14000,0.0621,0.1255,Ethanol Futures
+Sep-19,30/9/2019,14500,0.0847,0.0993,Ethanol Futures
+Sep-19,30/9/2019,15000,0.1115,0.0773,Ethanol Futures
+Sep-19,30/9/2019,15500,0.1422,0.0592,Ethanol Futures
+Sep-19,30/9/2019,16000,0.1767,0.0449,Ethanol Futures
+Apr-19,30/4/2019,1290,0.2,22.5,Gold Futures
+Apr-19,30/4/2019,1295,0.4,17.7,Gold Futures
+Apr-19,30/4/2019,1300,0.8,13.1,Gold Futures
+Apr-19,30/4/2019,1305,1.6,8.9,Gold Futures
+Apr-19,30/4/2019,1310,3.3,5.6,Gold Futures
+Apr-19,30/4/2019,1315,5.9,3.2,Gold Futures
+Apr-19,30/4/2019,1320,9.5,1.8,Gold Futures
+Apr-19,30/4/2019,1325,13.7,1,Gold Futures
+Apr-19,30/4/2019,1330,18.2,0.5,Gold Futures
+Apr-19,30/4/2019,1335,23,0.3,Gold Futures
+Jun-19,28/6/2019,1295,11.6,30.1,Gold Futures
+Jun-19,28/6/2019,1300,13.5,27.1,Gold Futures
+Jun-19,28/6/2019,1305,15.8,24.3,Gold Futures
+Jun-19,28/6/2019,1310,18.2,21.8,Gold Futures
+Jun-19,28/6/2019,1315,20.9,19.5,Gold Futures
+Jun-19,28/6/2019,1320,23.8,17.4,Gold Futures
+Jun-19,28/6/2019,1325,26.9,15.6,Gold Futures
+Jun-19,28/6/2019,1330,30.3,13.9,Gold Futures
+Jun-19,28/6/2019,1335,33.8,12.5,Gold Futures
+Jun-19,28/6/2019,1340,37.4,11.1,Gold Futures
+Oct-19,31/10/2019,1310,24,44.5,Gold Futures
+Oct-19,31/10/2019,1315,26.3,41.8,Gold Futures
+Oct-19,31/10/2019,1320,28.7,39.3,Gold Futures
+Oct-19,31/10/2019,1325,31.3,36.9,Gold Futures
+Oct-19,31/10/2019,1330,34,34.7,Gold Futures
+Oct-19,31/10/2019,1335,36.9,32.6,Gold Futures
+Oct-19,31/10/2019,1340,39.9,30.6,Gold Futures
+Oct-19,31/10/2019,1345,43,28.8,Gold Futures
+Oct-19,31/10/2019,1350,46.2,27.1,Gold Futures
+Oct-19,31/10/2019,1355,39.6,25.5,Gold Futures
+Apr-20,30/4/2020,1325,42.9,65.6,Gold Futures
+Apr-20,30/4/2020,1330,45.3,63.1,Gold Futures
+Apr-20,30/4/2020,1335,47.7,60.6,Gold Futures
+Apr-20,30/4/2020,1340,50.3,58.3,Gold Futures
+Apr-20,30/4/2020,1345,53,56,Gold Futures
+Apr-20,30/4/2020,1350,55.7,53.8,Gold Futures
+Apr-20,30/4/2020,1355,58.5,51.7,Gold Futures
+Apr-20,30/4/2020,1360,61.4,49.7,Gold Futures
+Apr-20,30/4/2020,1365,64.4,47.8,Gold Futures
+Apr-20,30/4/2020,1370,67.5,45.9,Gold Futures
+Jun-21,30/6/2021,1360,80.1,104.3,Gold Futures
+Jun-21,30/6/2021,1365,82.7,102.1,Gold Futures
+Jun-21,30/6/2021,1370,85.4,99.9,Gold Futures
+Jun-21,30/6/2021,1375,88.1,97.7,Gold Futures
+Jun-21,30/6/2021,1380,90.8,95.7,Gold Futures
+Jun-21,30/6/2021,1385,93.6,93.6,Gold Futures
+Jun-21,30/6/2021,1390,96.5,91.6,Gold Futures
+Jun-21,30/6/2021,1395,99.4,89.7,Gold Futures
+Jun-21,30/6/2021,1400,102.4,87.8,Gold Futures
+Jun-21,30/6/2021,1405,105.4,86,Gold Futures
+Jun-22,30/6/2022,1395,108.7,123.8,Gold Futures
+Jun-22,30/6/2022,1400,111.7,122.1,Gold Futures
+Jun-22,30/6/2022,1405,114.8,120.3,Gold Futures
+Jun-22,30/6/2022,1410,117.9,118.7,Gold Futures
+Jun-22,30/6/2022,1415,121,117,Gold Futures
+Jun-22,30/6/2022,1420,124.3,115.4,Gold Futures
+Jun-22,30/6/2022,1425,127.5,113.9,Gold Futures
+Jun-22,30/6/2022,1430,130.8,112.4,Gold Futures
+Jun-22,30/6/2022,1435,134.2,111,Gold Futures
+Jun-22,30/6/2022,1440,137.6,109.6,Gold Futures
+Jun-23,30/6/2023,1425,126.8,146.9,Gold Futures
+Jun-23,30/6/2023,1430,129.8,145.2,Gold Futures
+Jun-23,30/6/2023,1435,133,143.6,Gold Futures
+Jun-23,30/6/2023,1440,136.1,142,Gold Futures
+Jun-23,30/6/2023,1445,139.4,140.5,Gold Futures
+Jun-23,30/6/2023,1450,142.6,139,Gold Futures
+Jun-23,30/6/2023,1455,145.9,137.5,Gold Futures
+Jun-23,30/6/2023,1460,149.2,136.1,Gold Futures
+Jun-23,30/6/2023,1465,152.6,134.8,Gold Futures
+Jun-23,30/6/2023,1470,156,133.4,Gold Futures
+Jun-24,28/6/2024,1455,141.9,164.2,Gold Futures
+Jun-24,28/6/2024,1460,145,162.7,Gold Futures
+Jun-24,28/6/2024,1465,148.2,161.2,Gold Futures
+Jun-24,28/6/2024,1470,151.4,159.7,Gold Futures
+Jun-24,28/6/2024,1475,154.7,158.2,Gold Futures
+Jun-24,28/6/2024,1480,158,156.9,Gold Futures
+Jun-24,28/6/2024,1485,161.3,155.5,Gold Futures
+Jun-24,28/6/2024,1490,164.7,154.2,Gold Futures
+Jun-24,28/6/2024,1495,168.1,152.9,Gold Futures
+Jun-24,28/6/2024,1500,171.6,151.6,Gold Futures
+Mar-19,29/3/2019,1520,0.018,0.255,Silver Futures
+Mar-19,29/3/2019,1525,0.026,0.213,Silver Futures
+Mar-19,29/3/2019,1530,0.038,0.175,Silver Futures
+Mar-19,29/3/2019,1535,0.054,0.141,Silver Futures
+Mar-19,29/3/2019,1540,0.073,0.11,Silver Futures
+Mar-19,29/3/2019,1545,0.098,0.085,Silver Futures
+Mar-19,29/3/2019,1550,0.127,0.064,Silver Futures
+Mar-19,29/3/2019,1555,0.16,0.047,Silver Futures
+Mar-19,29/3/2019,1560,0.197,0.034,Silver Futures
+Mar-19,29/3/2019,1565,0.237,0.024,Silver Futures
+Jun-19,28/6/2019,1525,0.255,0.521,Silver Futures
+Jun-19,28/6/2019,1530,0.276,0.492,Silver Futures
+Jun-19,28/6/2019,1535,0.299,0.465,Silver Futures
+Jun-19,28/6/2019,1540,0.322,0.438,Silver Futures
+Jun-19,28/6/2019,1545,0.347,0.412,Silver Futures
+Jun-19,28/6/2019,1550,0.373,0.388,Silver Futures
+Jun-19,28/6/2019,1555,0.4,0.365,Silver Futures
+Jun-19,28/6/2019,1560,0.428,0.342,Silver Futures
+Jun-19,28/6/2019,1565,0.458,0.321,Silver Futures
+Jun-19,28/6/2019,1570,0.488,0.301,Silver Futures
+Sep-19,30/9/2019,1450,0.223,1.306,Silver Futures
+Sep-19,30/9/2019,1475,0.292,1.127,Silver Futures
+Sep-19,30/9/2019,1500,0.377,0.963,Silver Futures
+Sep-19,30/9/2019,1525,0.48,0.818,Silver Futures
+Sep-19,30/9/2019,1550,0.601,0.691,Silver Futures
+Sep-19,30/9/2019,1575,0.74,0.582,Silver Futures
+Sep-19,30/9/2019,1600,0.894,0.488,Silver Futures
+Sep-19,30/9/2019,1625,1.061,0.408,Silver Futures
+Sep-19,30/9/2019,1650,1.242,0.34,Silver Futures
+Sep-19,30/9/2019,1675,1.435,0.285,Silver Futures
+Mar-20,31/3/2020,1475,0.595,1.721,Silver Futures
+Mar-20,31/3/2020,1500,0.688,1.567,Silver Futures
+Mar-20,31/3/2020,1525,0.791,1.424,Silver Futures
+Mar-20,31/3/2020,1550,0.904,1.29,Silver Futures
+Mar-20,31/3/2020,1575,1.027,1.167,Silver Futures
+Mar-20,31/3/2020,1600,1.16,1.055,Silver Futures
+Mar-20,31/3/2020,1625,1.304,0.952,Silver Futures
+Mar-20,31/3/2020,1650,1.457,0.86,Silver Futures
+Mar-20,31/3/2020,1675,1.62,0.776,Silver Futures
+Mar-20,31/3/2020,1700,1.791,0.701,Silver Futures
+Jul-21,30/7/2021,1525,1.251,2.455,Silver Futures
+Jul-21,30/7/2021,1550,1.361,2.322,Silver Futures
+Jul-21,30/7/2021,1575,1.478,2.197,Silver Futures
+Jul-21,30/7/2021,1600,1.602,2.079,Silver Futures
+Jul-21,30/7/2021,1625,1.734,1.969,Silver Futures
+Jul-21,30/7/2021,1650,1.873,1.866,Silver Futures
+Jul-21,30/7/2021,1675,2.018,1.769,Silver Futures
+Jul-21,30/7/2021,1700,2.17,1.679,Silver Futures
+Jul-21,30/7/2021,1725,2.329,1.596,Silver Futures
+Jul-21,30/7/2021,1750,2.493,1.518,Silver Futures
+Jul-22,29/7/2022,1575,1.749,2.81,Silver Futures
+Jul-22,29/7/2022,1600,1.87,2.691,Silver Futures
+Jul-22,29/7/2022,1625,1.997,2.578,Silver Futures
+Jul-22,29/7/2022,1650,2.131,2.473,Silver Futures
+Jul-22,29/7/2022,1675,2.272,2.374,Silver Futures
+Jul-22,29/7/2022,1700,2.419,2.282,Silver Futures
+Jul-22,29/7/2022,1725,2.572,2.196,Silver Futures
+Jul-22,29/7/2022,1750,2.732,2.116,Silver Futures
+Jul-22,29/7/2022,1775,2.897,2.042,Silver Futures
+Jul-22,29/7/2022,1800,3.068,1.973,Silver Futures
+Jul-23,31/7/2023,1625,2.269,3.246,Silver Futures
+Jul-23,31/7/2023,1650,2.403,3.142,Silver Futures
+Jul-23,31/7/2023,1675,2.542,3.045,Silver Futures
+Jul-23,31/7/2023,1700,2.688,2.953,Silver Futures
+Jul-23,31/7/2023,1725,2.839,2.867,Silver Futures
+Jul-23,31/7/2023,1750,2.995,2.786,Silver Futures
+Jul-23,31/7/2023,1775,3.156,2.711,Silver Futures
+Jul-23,31/7/2023,1800,3.323,2.64,Silver Futures
+Jul-23,31/7/2023,1825,3.494,2.574,Silver Futures
+Jul-23,31/7/2023,1850,3.669,2.512,Silver Futures
+Apr-19,30/4/2019,2680,0.0008,0.1417,Natural Gas Futures
+Apr-19,30/4/2019,2700,0.0013,0.1223,Natural Gas Futures
+Apr-19,30/4/2019,2730,0.0032,0.0941,Natural Gas Futures
+Apr-19,30/4/2019,2750,0.0055,0.0765,Natural Gas Futures
+Apr-19,30/4/2019,2760,0.0071,0.0681,Natural Gas Futures
+Apr-19,30/4/2019,2770,0.0091,0.0601,Natural Gas Futures
+Apr-19,30/4/2019,2800,0.018,0.039,Natural Gas Futures
+Apr-19,30/4/2019,2810,0.0221,0.0331,Natural Gas Futures
+Apr-19,30/4/2019,2830,0.0321,0.0231,Natural Gas Futures
+Apr-19,30/4/2019,2850,0.0445,0.0155,Natural Gas Futures
+Jun-19,28/6/2019,2750,0.0463,0.1727,Natural Gas Futures
+Jun-19,28/6/2019,2800,0.0633,0.14,Natural Gas Futures
+Jun-19,28/6/2019,2810,0.0672,0.1339,Natural Gas Futures
+Jun-19,28/6/2019,2830,0.0755,0.1223,Natural Gas Futures
+Jun-19,28/6/2019,2850,0.0845,0.1113,Natural Gas Futures
+Jun-19,28/6/2019,2860,0.0892,0.1061,Natural Gas Futures
+Jun-19,28/6/2019,2870,0.0941,0.1011,Natural Gas Futures
+Jun-19,28/6/2019,2880,0.0991,0.0962,Natural Gas Futures
+Jun-19,28/6/2019,2890,0.2781,0.0914,Natural Gas Futures
+Jun-19,28/6/2019,2900,0.1097,0.0868,Natural Gas Futures
+Sep-19,30/9/2019,2800,0.0929,0.2295,Natural Gas Futures
+Sep-19,30/9/2019,2810,0.0965,0.1558,Natural Gas Futures
+Sep-19,30/9/2019,2850,0.112,0.1991,Natural Gas Futures
+Sep-19,30/9/2019,2860,0.2712,0.1933,Natural Gas Futures
+Sep-19,30/9/2019,2870,0.1204,0.1308,Natural Gas Futures
+Sep-19,30/9/2019,2890,0.1292,0.1767,Natural Gas Futures
+Sep-19,30/9/2019,2900,0.1338,0.1714,Natural Gas Futures
+Sep-19,30/9/2019,2950,0.1583,0.1464,Natural Gas Futures
+Sep-19,30/9/2019,2970,0.3438,0.1372,Natural Gas Futures
+Sep-19,30/9/2019,2980,0.3508,0.1327,Natural Gas Futures
+Mar-20,31/3/2020,2880,0.381,0.3914,Natural Gas Futures
+Mar-20,31/3/2020,2900,0.2946,0.3836,Natural Gas Futures
+Mar-20,31/3/2020,2910,0.3999,0.3798,Natural Gas Futures
+Mar-20,31/3/2020,2920,0.4064,0.376,Natural Gas Futures
+Mar-20,31/3/2020,2930,0.4128,0.3723,Natural Gas Futures
+Mar-20,31/3/2020,2940,0.4193,0.3687,Natural Gas Futures
+Mar-20,31/3/2020,2950,0.4259,0.3651,Natural Gas Futures
+Mar-20,31/3/2020,2960,0.4324,0.3615,Natural Gas Futures
+Mar-20,31/3/2020,3000,0.3566,0.3478,Natural Gas Futures
+Mar-20,31/3/2020,3050,0.4936,0.3319,Natural Gas Futures
+Mar-21,31/3/2021,2550,0.2269,0.3652,Natural Gas Futures
+Mar-21,31/3/2021,2600,0.2511,0.4196,Natural Gas Futures
+Mar-21,31/3/2021,2650,0.2638,0.3975,Natural Gas Futures
+Mar-21,31/3/2021,2700,0.304,0.3768,Natural Gas Futures
+Mar-21,31/3/2021,2750,0.3326,0.3575,Natural Gas Futures
+Mar-21,31/3/2021,2800,0.3624,0.3395,Natural Gas Futures
+Mar-21,31/3/2021,2850,0.3938,0.323,Natural Gas Futures
+Mar-21,31/3/2021,2900,0.4204,0.3078,Natural Gas Futures
+Mar-21,31/3/2021,2950,0.456,0.2937,Natural Gas Futures
+Mar-21,31/3/2021,3000,0.4925,0.2805,Natural Gas Futures
+Mar-22,31/3/2022,2550,0.2099,0.388,Natural Gas Futures
+Mar-22,31/3/2022,2600,0.2324,0.4032,Natural Gas Futures
+Mar-22,31/3/2022,2650,0.2667,0.3667,Natural Gas Futures
+Mar-22,31/3/2022,2700,0.282,0.3091,Natural Gas Futures
+Mar-22,31/3/2022,2750,0.3088,0.3388,Natural Gas Futures
+Mar-22,31/3/2022,2800,0.3368,0.3199,Natural Gas Futures
+Mar-22,31/3/2022,2850,0.3731,0.3024,Natural Gas Futures
+Mar-22,31/3/2022,2900,0.4068,0.2862,Natural Gas Futures
+Mar-22,31/3/2022,2950,0.448,0.248,Natural Gas Futures
+Mar-22,31/3/2022,3000,0.4769,0.2568,Natural Gas Futures
+Mar-23,31/3/2023,2300,0.1403,0.5926,Natural Gas Futures
+Mar-23,31/3/2023,2500,0.2089,0.4516,Natural Gas Futures
+Mar-23,31/3/2023,2650,0.2722,0.3617,Natural Gas Futures
+Mar-23,31/3/2023,2700,0.2954,0.3343,Natural Gas Futures
+Mar-23,31/3/2023,2750,0.2887,0.3922,Natural Gas Futures
+Mar-23,31/3/2023,3000,0.4531,0.298,Natural Gas Futures
+Mar-23,31/3/2023,3050,0.4887,0.2819,Natural Gas Futures
+Mar-23,31/3/2023,3250,0.6401,0.2262,Natural Gas Futures
+Mar-23,31/3/2023,3500,0.8458,0.1723,Natural Gas Futures
+Mar-23,31/3/2023,3700,1.02,0.1386,Natural Gas Futures
+Mar-24,29/3/2024,2250,0.081,0.6544,Natural Gas Futures
+Mar-24,29/3/2024,2500,0.1392,0.4676,Natural Gas Futures
+Mar-24,29/3/2024,2650,0.1894,0.3706,Natural Gas Futures
+Mar-24,29/3/2024,2850,0.2704,0.3849,Natural Gas Futures
+Mar-24,29/3/2024,3000,0.3723,0.3309,Natural Gas Futures
+Mar-24,29/3/2024,3050,0.4008,0.3186,Natural Gas Futures
+Mar-24,29/3/2024,3250,0.5518,0.2889,Natural Gas Futures
+Mar-24,29/3/2024,3500,0.7578,0.2567,Natural Gas Futures
+Mar-24,29/3/2024,3700,0.9328,0.2344,Natural Gas Futures
+Mar-24,29/3/2024,4500,1.6819,0.1589,Natural Gas Futures
+Mar-25,31/3/2025,2250,0.1006,0.5427,Natural Gas Futures
+Mar-25,31/3/2025,2500,0.178,0.4666,Natural Gas Futures
+Mar-25,31/3/2025,3000,0.4748,0.2624,Natural Gas Futures
+Mar-25,31/3/2025,3500,0.8913,0.0843,Natural Gas Futures
+Mar-25,31/3/2025,5000,2.3279,0.0418,Natural Gas Futures
+Mar-26,31/3/2026,2250,0.0672,0.8333,Natural Gas Futures
+Mar-26,31/3/2026,3500,0.663,0.185,Natural Gas Futures

@@ -39,7 +39,7 @@ def _get_best_model(priceData, pLimit, oLimit, qLimit):
         for oValue in range(oLimit):
             for qValue in range(qLimit):
                 try:
-                    tmp_mdl = arch_model(y = TS,
+                    tmp_mdl = arch_model(y = priceData,
                                          p = pValue,
                                          o = oValue,
                                          q = qValue,
@@ -47,7 +47,7 @@ def _get_best_model(priceData, pLimit, oLimit, qLimit):
                     tmp_aic = tmp_mdl.aic
                     if tmp_aic < best_aic:
                         best_aic = tmp_aic
-                        best_order = [pValue, qValue]
+                        best_order = [pValue, oValue, qValue]
                         best_mdl = tmp_mdl
                 except:
                     continue
@@ -67,4 +67,8 @@ for column in df.columns:
     TS = TS[np.isnan(TS) == False]
     mlRes[column] = _get_best_model(TS, pLimitInput, oLimitInput, qLimitInput)
     
-    
+
+column = df.columns[0]
+TS = (np.log(df[column]) - np.log(df[column].shift(1))) * 100
+TS = TS[np.isnan(TS) == False]
+mlRes[column] = _get_best_model(TS, pLimitInput, oLimitInput, qLimitInput)
