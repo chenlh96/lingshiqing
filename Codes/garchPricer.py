@@ -268,12 +268,32 @@ for row in progressbar.progressbar(df_opt.index):
     
     garchResults = garchPricer(tmp_s0, tmp_strike, tmp_model, repoRateDict[tmp_uly], tmp_expBusDays, numPath)
     garchFairPriceCall.append(garchResults['Call'])
-    garchFairPriceCall.append(garchResults['Put'])
+    garchFairPricePut.append(garchResults['Put'])
     
 df_opt['Put (MC non-GARCH)'] = nonGarchFairPricePut
 df_opt['Call (MC non-GARCH)'] = nonGarchFairPriceCall
 df_opt['Put (MC GARCH)'] = garchFairPricePut
 df_opt['Call (MC GARCH)'] = garchFairPriceCall
+
+
+# =============================================================================
+# For testing only
+# =============================================================================
+res = masterObj[tmp_uly]['Best Model']['Best Model']
+vol = res.forecast(horizon=100)
+np.sqrt(vol.residual_variance.iloc[-1].values)
+res['Best Model']
+
+df_opt.to_csv('garchPricerResult.csv')
+
+
+
+
+
+
+
+
+
 
 
 
