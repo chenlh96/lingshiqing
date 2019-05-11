@@ -259,7 +259,7 @@ for row in progressbar.progressbar(df_opt.index):
     
     # Retrieve the underlying historical data
     tmp_s0 = masterObj[tmp_uly]['Start Price']
-    tmp_vol = masterObj[tmp_uly]['Volaitility']
+    tmp_vol = masterObj[tmp_uly]['Volatility']
     tmp_model = masterObj[tmp_uly]['Best Model']
     
     nonGarchResults = nonGarchPricer(tmp_s0, tmp_strike, tmp_vol, repoRateDict[tmp_uly], tmp_expBusDays, numPath)
