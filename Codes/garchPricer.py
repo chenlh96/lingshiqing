@@ -12,6 +12,7 @@ import statistics
 import progressbar
 from datetime import datetime
 from arch import arch_model
+from statsmodels.stats.diagnostic import acorr_ljungbox
 import warnings
 warnings.filterwarnings('ignore')
 warnings.simplefilter("ignore")
@@ -34,7 +35,7 @@ yieldCurveDict = {
                     '2029-03-22': 2.44,
                     '2039-03-22': 2.69,
                     '2049-03-22': 2.88
-                }
+                 }
 
 # Derive forward rates from US treasury yield curve
 curvePoints = ['2019-03-22'] + list(yieldCurveDict.keys())
@@ -89,11 +90,11 @@ repoRateDict = {
 # Utility functions
 # =============================================================================
 commodityCurrDict = {
-                    'Crude Oil WTI':    0.01,
-                    'Ethanol':          0.0001,
-                    'Gold':             1,
-                    'Natural Gas':      0.001,
-                    'Silver':           0.01
+                        'Crude Oil WTI':    0.01,
+                        'Ethanol':          0.0001,
+                        'Gold':             1,
+                        'Natural Gas':      0.001,
+                        'Silver':           0.01
                     }
 
 def get_currency_divisor(commodity):
@@ -101,13 +102,16 @@ def get_currency_divisor(commodity):
 
 def get_best_model(logRtSeries, pLimit, oLimit, qLimit):
     # To do: add model checking with white noise using ljungbox test
-    best_aic = np.inf
+    best_bic   = np.inf
     best_order = None
-    best_mdl = None
+    best_mdl   = None
+    best_numParams = np.inf
+    isZeroMean = False
 
-    for pValue in range(pLimit):
-        for oValue in range(oLimit):
-            for qValue in range(qLimit):
+    for pValue in range(pLimit+1):
+        for oValue in range(oLimit+1):
+            for qValue in range(qLimit+1):
+                isZeroMean = False
                 try:
                     tmp_mdl = arch_model(y = logRtSeries,
                                          p = pValue,
@@ -115,19 +119,62 @@ def get_best_model(logRtSeries, pLimit, oLimit, qLimit):
                                          q = qValue,
                                          dist = 'Normal')
                     tmp_res = tmp_mdl.fit(update_freq=5, disp='off')
-                    tmp_aic = tmp_res.aic
-                    if tmp_aic < best_aic:
-                        best_aic = tmp_aic
-                        best_order = [pValue, oValue, qValue]
-                        best_mdl = tmp_res
+                    
+                    # Remove mean if it's not significant
+                    if tmp_res.pvalues['mu'] > 0.05:
+                        isZeroMean = True
+                        tmp_mdl = arch_model(y = logRtSeries,
+                                             mean = 'Zero',
+                                             p = pValue,
+                                             o = oValue,
+                                             q = qValue,
+                                             dist = 'Normal')
+                        tmp_res = tmp_mdl.fit(update_freq=5, disp='off')
+                        
+                    
+                    tmp_bic = tmp_res.bic
+                    tmp_numParams = tmp_res.num_params
+                    tmp_wn_test = tmp_res.resid / tmp_res._volatility
+                    [lbvalue, pvalue] = acorr_ljungbox(tmp_wn_test, lags = 20)
+                    
+                    # Make sure the model pass Ljunbox Test, and fit the time series
+                    if pvalue[19] >= 0.05:
+                        if best_bic / tmp_bic > 1.05:
+                            best_bic = tmp_bic
+                            best_order = [pValue, oValue, qValue]
+                            best_mdl = tmp_res
+                        # Choose simpler model
+                        elif tmp_bic <= best_bic and tmp_numParams <= best_numParams:
+                            best_bic = tmp_bic
+                            best_order = [pValue, oValue, qValue]
+                            best_mdl = tmp_res
                 except:
                     continue
+
+    # Test for first 20 test
+    wn_test = best_mdl.resid / best_mdl._volatility
+    [lbvalue, pvalue] = acorr_ljungbox(wn_test, lags = 20)
     
     output = {}
-    output['Best AIC'] = best_aic
+    output['Zero Mean Model'] = isZeroMean
+    output['Best BIC'] = best_bic
     output['Best Order'] = best_order
     output['Best Model'] = best_mdl
-    
+    output['Ljunbox Test Statistics'] = lbvalue[19]
+    output['Ljunbox Test pvalue'] = pvalue[19]
+
+    return output
+
+# Get affine garch model
+def get_affine_garch(logRtSeries):
+    tmp_mdl = arch_model(y = logRtSeries,p = 1,q = 1,dist = 'Normal')
+    tmp_res = tmp_mdl.fit(update_freq=5, disp='off')
+    tmp_bic = tmp_res.aic
+
+    output = {}
+    output['Best AIC'] = tmp_bic
+    output['Best Model'] = tmp_res
+
     return output
 
 # Use GARCH vol to price Asian option (Monte Carlo)
@@ -138,69 +185,69 @@ def garchPricer(startPrice, strikePrice, garchModel, repo, expBusDays, numPath):
     mu = res.params['mu']
     volForecasts = res.forecast(horizon=expBusDays)
     vol = np.sqrt(volForecasts.residual_variance.iloc[-1].values)
-    
+
     for i in range(numPath):
         ulyPrice = startPrice
         sumUlyPrice = 0
         dt = 1 / 252
-        randomGenerator = np.random.normal(0, np.sqrt(dt), expBusDays)
+        randomGenerator = np.random.normal(0, 1, expBusDays)
         discountRate = 0
-        
+
         # Simulated one path of underlying price
         for j in range(expBusDays):
-            dWt = randomGenerator[j]
+            zt = randomGenerator[j]
             rt = getRiskFreeRate(j) / 100
-            dLogSt = mu + vol[j] * dWt
-            discountRate += rt * dt
-            ulyPrice = ulyPrice * np.exp(dLogSt)
+            dLogSt = mu + vol[j] / 100 * zt
+            discountRate += rt
+            ulyPrice *= np.exp(dLogSt)
             sumUlyPrice += ulyPrice
-    
+
         avgUlyPrice = sumUlyPrice / expBusDays
-        
+
         # True for call, false for put
-        sumCallPrice += max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate)
-        sumPutPrice += max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate)
-    
+        sumCallPrice += max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate * dt)
+        sumPutPrice  += max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate * dt)
+
     output = {
                 'Call': sumCallPrice / numPath,
-                'Put': sumPutPrice / numPath
-            }
-    
+                'Put':  sumPutPrice / numPath
+             }
+
     return output
 
 # Pricing Asian Option with fixed vol (Monte Carlo)
 def nonGarchPricer(startPrice, strikePrice, vol, repo, expBusDays, numPath):
     sumCallPrice = 0
     sumPutPrice = 0
-    
+
     for i in range(numPath):
         ulyPrice = startPrice
         sumUlyPrice = 0
         dt = 1 / 252
         randomGenerator = np.random.normal(0, np.sqrt(dt), expBusDays)
         discountRate = 0
-        
+
         # Simulated one path of underlying price
         for j in range(expBusDays):
             dWt = randomGenerator[j]
             rt = getRiskFreeRate(j) / 100
             dLogSt = (rt - repo) * dt + vol * dWt
-            discountRate += rt * dt
-            ulyPrice = ulyPrice * np.exp(dLogSt)
+            discountRate += rt
+            ulyPrice *= np.exp(dLogSt)
             sumUlyPrice += ulyPrice
-    
+
         avgUlyPrice = sumUlyPrice / expBusDays
-        
-        # True for call, false for put
-        sumCallPrice += max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate)
-        sumPutPrice += max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate)
-    
+
+        sumCallPrice += max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate * dt)
+        sumPutPrice  += max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate * dt)
+
     output = {
                 'Call': sumCallPrice / numPath,
-                'Put': sumPutPrice / numPath
-            }
-    
+                'Put':  sumPutPrice / numPath
+             }
+
     return output
+
 # =============================================================================
 # Data Preprocessing
 # =============================================================================
@@ -220,10 +267,17 @@ df_opt.columns = ['Start Date','Maturity Date','Strike','Put','Call','Underlying
 df_opt['Maturity Date'] = pd.to_datetime(df_opt['Maturity Date']).dt.date
 df_opt['Start Date'] = '2019-3-25'
 df_opt['Start Date'] = pd.to_datetime(df_opt['Start Date']).dt.date
-df_opt['Exp BusDays'] = np.busday_count(df_opt['Start Date'], df_opt['Maturity Date']) + 1
+try:
+    df_opt['Exp BusDays'] = np.busday_count(df_opt['Start Date'], df_opt['Maturity Date']) + 1
+except:
+    # Sometimes line above may not work, use method below as an alternative
+    tmp_list = []
+    for i in range(len(df_opt['Start Date'])):
+        tmp_list.append(np.busday_count(df_opt['Start Date'][i], df_opt['Maturity Date'][i]) + 1)
+    df_opt['Exp BusDays'] = tmp_list
 
 # =============================================================================
-# Get best GARCH model for underlyings whose options we will price later
+# Get best GARCH model and other info for underlyings whose options we will price later
 # =============================================================================
 masterObj = {}
 
@@ -231,11 +285,11 @@ ulyList = np.unique(df_opt['Underlying'])
 for underlying in progressbar.progressbar(ulyList):
     tmp_uly = underlying[:-8]
     TS_uly = df_uly[tmp_uly].dropna()
-    TS_logRt = (np.log(TS_uly) - np.log(TS_uly.shift(1))).dropna()
+    TS_logRt = (np.log(TS_uly) - np.log(TS_uly.shift(1))).dropna() * 100
     masterObj[tmp_uly] = {
-                            'Start Price': TS_uly[-1],
-                            'Volatility': statistics.stdev(TS_logRt),
-                            'Best Model': get_best_model(TS_logRt, 10, 10, 10)
+                            'Start Price':  TS_uly[-1],
+                            'Volatility':   statistics.stdev(TS_logRt),
+                            'Garch Model':  get_best_model(TS_logRt, 10, 10, 10)
                          }
 
 # =============================================================================
@@ -256,20 +310,20 @@ for row in progressbar.progressbar(df_opt.index):
     tmp_strike = df_opt['Strike'][row] * get_currency_divisor(tmp_uly)
     tmp_maturity = df_opt['Maturity Date'][row]
     tmp_expBusDays = df_opt['Exp BusDays'][row]
-    
+
     # Retrieve the underlying historical data
     tmp_s0 = masterObj[tmp_uly]['Start Price']
     tmp_vol = masterObj[tmp_uly]['Volatility']
-    tmp_model = masterObj[tmp_uly]['Best Model']
-    
+    tmp_model = masterObj[tmp_uly]['Garch Model']
+
     nonGarchResults = nonGarchPricer(tmp_s0, tmp_strike, tmp_vol, repoRateDict[tmp_uly], tmp_expBusDays, numPath)
     nonGarchFairPriceCall.append(nonGarchResults['Call'])
     nonGarchFairPricePut.append(nonGarchResults['Put'])
-    
+
     garchResults = garchPricer(tmp_s0, tmp_strike, tmp_model, repoRateDict[tmp_uly], tmp_expBusDays, numPath)
     garchFairPriceCall.append(garchResults['Call'])
     garchFairPricePut.append(garchResults['Put'])
-    
+
 df_opt['Put (MC non-GARCH)'] = nonGarchFairPricePut
 df_opt['Call (MC non-GARCH)'] = nonGarchFairPriceCall
 df_opt['Put (MC GARCH)'] = garchFairPricePut
@@ -279,7 +333,7 @@ df_opt['Call (MC GARCH)'] = garchFairPriceCall
 # =============================================================================
 # For testing only
 # =============================================================================
-res = masterObj[tmp_uly]['Best Model']['Best Model']
+res = masterObj[tmp_uly]['Garch Model']['Best Model']
 vol = res.forecast(horizon=100)
 np.sqrt(vol.residual_variance.iloc[-1].values)
 res['Best Model']
