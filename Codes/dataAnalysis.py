@@ -80,10 +80,12 @@ for underlying in progressbar.progressbar(ulyList):
     tmp_uly = underlying[:-8]
     TS_uly = df_uly[tmp_uly].dropna()
     TS_logRt = (np.log(TS_uly) - np.log(TS_uly.shift(1))).dropna()*100
+    max_expDays = max(df_opt[df_opt['Underlying']==underlying]['Exp BusDays'])
     masterObj[tmp_uly] = {
                             'Start Price':  TS_uly[-1],
                             'Log Return':   TS_logRt,
-                            'Volatility':   statistics.stdev(TS_logRt)
+                            'Volatility':   statistics.stdev(TS_logRt),
+                            'Max ExpDays':  max_expDays
                          }
 
 tmp_uly = 'Crude Oil WTI'
@@ -99,7 +101,7 @@ plt.show()
 
 oilLogRt.mean()
 
-am = arch_model(oilLogRt,mean = 'Zero', p=1, o=1, q=1)
+am = arch_model(TS_logRt,mean = 'Zero', p=1, o=1, q=1)
 res = am.fit(update_freq=5, disp='off')
 print(res.summary())
 len()
@@ -119,7 +121,7 @@ plt.show()
 
 
 wn = res.resid/res._volatility
-[lbvalue, pvalue] = acorr_ljungbox(wn, lags = 20)
+[lbvalue, pvalue] = acorr_ljungbox(oilLogRt, lags = 20)
 print('Ljung-Box Statistics: ', lbvalue[19])
 print('p-value: ', pvalue[19])
 

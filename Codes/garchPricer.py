@@ -13,6 +13,7 @@ import progressbar
 from datetime import datetime
 from arch import arch_model
 from statsmodels.stats.diagnostic import acorr_ljungbox
+import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
 warnings.simplefilter("ignore")
@@ -76,9 +77,9 @@ def getRiskFreeRate(dayCounts):
     return 0
 
 # =============================================================================
-# Repo Rates
+# convenience yield - storage cost
 # =============================================================================
-repoRateDict = {
+commodityYieldDict = {
                 'Crude Oil WTI':    0.01,
                 'Ethanol':          0.01,
                 'Gold':             0.01,
@@ -100,17 +101,17 @@ commodityCurrDict = {
 def get_currency_divisor(commodity):
     return commodityCurrDict[commodity]
 
-def get_best_model(logRtSeries, pLimit, oLimit, qLimit):
-    # To do: add model checking with white noise using ljungbox test
+# Get best GJR GARCH model for the log return series
+def get_best_model(logRtSeries, pLimit, oLimit, qLimit, predictDays):
     best_bic   = np.inf
     best_order = None
     best_mdl   = None
     best_numParams = np.inf
     isZeroMean = False
 
-    for pValue in range(pLimit+1):
-        for oValue in range(oLimit+1):
-            for qValue in range(qLimit+1):
+    for pValue in range(pLimit + 1):
+        for oValue in range(oLimit + 1):
+            for qValue in range(qLimit + 1):
                 isZeroMean = False
                 try:
                     tmp_mdl = arch_model(y = logRtSeries,
@@ -130,7 +131,6 @@ def get_best_model(logRtSeries, pLimit, oLimit, qLimit):
                                              q = qValue,
                                              dist = 'Normal')
                         tmp_res = tmp_mdl.fit(update_freq=5, disp='off')
-                        
                     
                     tmp_bic = tmp_res.bic
                     tmp_numParams = tmp_res.num_params
@@ -151,7 +151,31 @@ def get_best_model(logRtSeries, pLimit, oLimit, qLimit):
                 except:
                     continue
 
-    # Test for first 20 test
+    # Handle situations when all models don't pass Ljunbox Test
+    if (best_mdl == None):
+        tmp_mdl = arch_model(y = logRtSeries,
+                             p = 1,
+                             o = 1,
+                             q = 1,
+                             dist = 'Normal')
+        best_mdl = tmp_mdl.fit(update_freq=5, disp='off')
+        
+        # Remove mean if it's not significant
+        if best_mdl.pvalues['mu'] > 0.05:
+            isZeroMean = True
+            tmp_mdl = arch_model(y = logRtSeries,
+                                 mean = 'Zero',
+                                 p = 1,
+                                 o = 1,
+                                 q = 1,
+                                 dist = 'Normal')
+            best_mdl = tmp_mdl.fit(update_freq=5, disp='off')
+        
+        best_bic = best_mdl.bic
+        best_order = [1, 1, 1]
+        
+    
+    # Test for first 20-lag
     wn_test = best_mdl.resid / best_mdl._volatility
     [lbvalue, pvalue] = acorr_ljungbox(wn_test, lags = 20)
     
@@ -160,12 +184,14 @@ def get_best_model(logRtSeries, pLimit, oLimit, qLimit):
     output['Best BIC'] = best_bic
     output['Best Order'] = best_order
     output['Best Model'] = best_mdl
+    volForecasts = best_mdl.forecast(horizon=predictDays)
+    output['Vol Predictions'] = np.sqrt(volForecasts.residual_variance.iloc[-1].values)
     output['Ljunbox Test Statistics'] = lbvalue[19]
     output['Ljunbox Test pvalue'] = pvalue[19]
 
     return output
 
-# Get affine garch model
+# Get affine garch model [not implemented yet]
 def get_affine_garch(logRtSeries):
     tmp_mdl = arch_model(y = logRtSeries,p = 1,q = 1,dist = 'Normal')
     tmp_res = tmp_mdl.fit(update_freq=5, disp='off')
@@ -178,13 +204,14 @@ def get_affine_garch(logRtSeries):
     return output
 
 # Use GARCH vol to price Asian option (Monte Carlo)
-def garchPricer(startPrice, strikePrice, garchModel, repo, expBusDays, numPath):
+def garchPricer(startPrice, strikePrice, garchModel, expBusDays, numPath):
     sumCallPrice = 0
     sumPutPrice = 0
     res = garchModel['Best Model']
-    mu = res.params['mu']
-    volForecasts = res.forecast(horizon=expBusDays)
-    vol = np.sqrt(volForecasts.residual_variance.iloc[-1].values)
+    mu = 0
+    if garchModel['Zero Mean Model'] == False:
+        mu = res.params['mu']
+    vol = garchModel['Vol Predictions']
 
     for i in range(numPath):
         ulyPrice = startPrice
@@ -216,7 +243,7 @@ def garchPricer(startPrice, strikePrice, garchModel, repo, expBusDays, numPath):
     return output
 
 # Pricing Asian Option with fixed vol (Monte Carlo)
-def nonGarchPricer(startPrice, strikePrice, vol, repo, expBusDays, numPath):
+def nonGarchPricer(startPrice, strikePrice, vol, costYield, expBusDays, numPath):
     sumCallPrice = 0
     sumPutPrice = 0
 
@@ -231,7 +258,7 @@ def nonGarchPricer(startPrice, strikePrice, vol, repo, expBusDays, numPath):
         for j in range(expBusDays):
             dWt = randomGenerator[j]
             rt = getRiskFreeRate(j) / 100
-            dLogSt = (rt - repo) * dt + vol * dWt
+            dLogSt = (rt - costYield) * dt + vol / 100 * dWt
             discountRate += rt
             ulyPrice *= np.exp(dLogSt)
             sumUlyPrice += ulyPrice
@@ -281,15 +308,17 @@ except:
 # =============================================================================
 masterObj = {}
 
-ulyList = np.unique(df_opt['Underlying'])
+ulyList = list(np.unique(df_opt['Underlying']))
 for underlying in progressbar.progressbar(ulyList):
     tmp_uly = underlying[:-8]
     TS_uly = df_uly[tmp_uly].dropna()
     TS_logRt = (np.log(TS_uly) - np.log(TS_uly.shift(1))).dropna() * 100
+    TS_logRt = TS_logRt[TS_logRt!=0]
+    max_expDays = max(df_opt[df_opt['Underlying']==underlying]['Exp BusDays'])
     masterObj[tmp_uly] = {
                             'Start Price':  TS_uly[-1],
                             'Volatility':   statistics.stdev(TS_logRt),
-                            'Garch Model':  get_best_model(TS_logRt, 10, 10, 10)
+                            'Garch Model':  get_best_model(TS_logRt, 10, 10, 10, max_expDays)
                          }
 
 # =============================================================================
@@ -316,11 +345,11 @@ for row in progressbar.progressbar(df_opt.index):
     tmp_vol = masterObj[tmp_uly]['Volatility']
     tmp_model = masterObj[tmp_uly]['Garch Model']
 
-    nonGarchResults = nonGarchPricer(tmp_s0, tmp_strike, tmp_vol, repoRateDict[tmp_uly], tmp_expBusDays, numPath)
+    nonGarchResults = nonGarchPricer(tmp_s0, tmp_strike, tmp_vol, commodityYieldDict[tmp_uly], tmp_expBusDays, numPath)
     nonGarchFairPriceCall.append(nonGarchResults['Call'])
     nonGarchFairPricePut.append(nonGarchResults['Put'])
 
-    garchResults = garchPricer(tmp_s0, tmp_strike, tmp_model, repoRateDict[tmp_uly], tmp_expBusDays, numPath)
+    garchResults = garchPricer(tmp_s0, tmp_strike, tmp_model, tmp_expBusDays, numPath)
     garchFairPriceCall.append(garchResults['Call'])
     garchFairPricePut.append(garchResults['Put'])
 
@@ -338,20 +367,21 @@ vol = res.forecast(horizon=100)
 np.sqrt(vol.residual_variance.iloc[-1].values)
 res['Best Model']
 
-df_opt.to_csv('garchPricerResult.csv')
+df_opt.to_csv('garchPricerResult_1.0.1.csv')
 
+TS_logRt = TS_logRt[TS_logRt!=0]
 
+test = get_best_model(TS_logRt, 1, 1, 1, max_expDays)
 
+testml = test['Best Model']
+wn_test = testml.resid / testml._volatility
+[lbvalue, pvalue] = acorr_ljungbox(wn_test, lags = 10)
+pvalue[9]
 
-
-
-
-
-
-
-
-
-
+plt.figure(figsize=(20,10))
+plt.plot(wn_test)
+plt.grid(True)
+plt.show()
 
 
 
