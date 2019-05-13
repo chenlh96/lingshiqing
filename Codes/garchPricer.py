@@ -358,7 +358,25 @@ df_opt['Call (MC non-GARCH)'] = nonGarchFairPriceCall
 df_opt['Put (MC GARCH)'] = garchFairPricePut
 df_opt['Call (MC GARCH)'] = garchFairPriceCall
 
+# =============================================================================
+# Get ARE Score
+# =============================================================================
 
+def calcARE(sim, actual):
+    return ((sim - actual).abs() / actual).sum() * 100 / sim.size
+
+callGarch = calcARE(df_opt['Call (MC GARCH)'], df_opt['Call'])
+putGarch = calcARE(df_opt['Put (MC GARCH)'], df_opt['Put'])
+callNonGarch = calcARE(df_opt['Call (MC non-GARCH)'], df_opt['Call'])
+putNonGarch = calcARE(df_opt['Put (MC non-GARCH)'], df_opt['Put'])
+
+print("MC GARCH Call ARE:",callGarch)
+print("MC non-GARCH Call ARE:",callNonGarch)
+print("MC GARCH Put ARE:",putGarch)
+print("MC non-GARCH Put ARE:",putNonGarch)
+
+for key in masterObj.keys():
+    print(key,":",masterObj[key]["Volatility"])
 # =============================================================================
 # For testing only
 # =============================================================================
