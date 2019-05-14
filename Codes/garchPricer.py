@@ -212,8 +212,12 @@ def garchPricer(startPrice, strikePrice, garchModel, expBusDays, numPath):
     if garchModel['Zero Mean Model'] == False:
         mu = res.params['mu']
     vol = garchModel['Vol Predictions']
+    simulatedUlyPrices = []
+    callPrices = []
+    putPrices = []
 
     for i in range(numPath):
+        simulatedUlyPrice = [startPrice]
         ulyPrice = startPrice
         sumUlyPrice = 0
         dt = 1 / 252
@@ -227,17 +231,28 @@ def garchPricer(startPrice, strikePrice, garchModel, expBusDays, numPath):
             dLogSt = mu + vol[j] / 100 * zt
             discountRate += rt
             ulyPrice *= np.exp(dLogSt)
+            simulatedUlyPrice.append(ulyPrice)
             sumUlyPrice += ulyPrice
 
         avgUlyPrice = sumUlyPrice / expBusDays
+        simulatedUlyPrices.append(simulatedUlyPrice)
 
         # True for call, false for put
-        sumCallPrice += max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate * dt)
-        sumPutPrice  += max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate * dt)
+        callPrice = max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate * dt)
+        putPrice = max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate * dt)
+        callPrices.append(callPrice)
+        putPrices.append(putPrice)
+        sumCallPrice += callPrice
+        sumPutPrice  += putPrice
 
     output = {
                 'Call': sumCallPrice / numPath,
-                'Put':  sumPutPrice / numPath
+                'Put':  sumPutPrice / numPath,
+                'Call Prices': callPrices,
+                'Put Prices': putPrices,
+                'Call STD': statistics.stdev(callPrices),
+                'Put STD': statistics.stdev(putPrices),
+                'Simulated Price': simulatedUlyPrices
              }
 
     return output
@@ -246,8 +261,12 @@ def garchPricer(startPrice, strikePrice, garchModel, expBusDays, numPath):
 def nonGarchPricer(startPrice, strikePrice, vol, costYield, expBusDays, numPath):
     sumCallPrice = 0
     sumPutPrice = 0
+    simulatedUlyPrices = []
+    callPrices = []
+    putPrices = []
 
     for i in range(numPath):
+        simulatedUlyPrice = [startPrice]
         ulyPrice = startPrice
         sumUlyPrice = 0
         dt = 1 / 252
@@ -258,19 +277,30 @@ def nonGarchPricer(startPrice, strikePrice, vol, costYield, expBusDays, numPath)
         for j in range(expBusDays):
             dWt = randomGenerator[j]
             rt = getRiskFreeRate(j) / 100
-            dLogSt = (rt - costYield) * dt + vol / 100 * dWt
+            dLogSt = (rt - costYield - (vol / 100)**2 / 2) * dt + vol / 100 * dWt
             discountRate += rt
             ulyPrice *= np.exp(dLogSt)
+            simulatedUlyPrice.append(ulyPrice)
             sumUlyPrice += ulyPrice
 
         avgUlyPrice = sumUlyPrice / expBusDays
+        simulatedUlyPrices.append(simulatedUlyPrice)
 
-        sumCallPrice += max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate * dt)
-        sumPutPrice  += max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate * dt)
+        callPrice = max(avgUlyPrice - strikePrice, 0) * np.exp(-discountRate * dt)
+        putPrice = max(strikePrice - avgUlyPrice, 0) * np.exp(-discountRate * dt)
+        callPrices.append(callPrice)
+        putPrices.append(putPrice)
+        sumCallPrice += callPrice
+        sumPutPrice  += putPrice
 
     output = {
                 'Call': sumCallPrice / numPath,
-                'Put':  sumPutPrice / numPath
+                'Put':  sumPutPrice / numPath,
+                'Call Prices': callPrices,
+                'Put Prices': putPrices,
+                'Call STD': statistics.stdev(callPrices),
+                'Put STD': statistics.stdev(putPrices),
+                'Simulated Price': simulatedUlyPrices
              }
 
     return output
@@ -328,6 +358,12 @@ nonGarchFairPriceCall = []
 nonGarchFairPricePut = []
 garchFairPriceCall = []
 garchFairPricePut = []
+nonGarchCallStd = []
+nonGarchPutStd = []
+garchCallStd = []
+garchPutStd = []
+resultsObj = {}
+
 
 # Number of Monte Carlo simulated paths
 numPath = 10000
@@ -348,67 +384,47 @@ for row in progressbar.progressbar(df_opt.index):
     nonGarchResults = nonGarchPricer(tmp_s0, tmp_strike, tmp_vol, commodityYieldDict[tmp_uly], tmp_expBusDays, numPath)
     nonGarchFairPriceCall.append(nonGarchResults['Call'])
     nonGarchFairPricePut.append(nonGarchResults['Put'])
+    nonGarchCallStd.append(nonGarchResults['Call STD'])
+    nonGarchPutStd.append(nonGarchResults['Put STD'])
 
     garchResults = garchPricer(tmp_s0, tmp_strike, tmp_model, tmp_expBusDays, numPath)
     garchFairPriceCall.append(garchResults['Call'])
     garchFairPricePut.append(garchResults['Put'])
+    garchCallStd.append(garchResults['Call STD'])
+    garchPutStd.append(garchResults['Put STD'])
+    
+    resultsObj[row] = {
+                        'GARCH MC': garchResults,
+                        'Non-GARCH MC': nonGarchResults
+                      }
 
 df_opt['Put (MC non-GARCH)'] = nonGarchFairPricePut
+df_opt['Put (MC non-GARCH) STD'] = nonGarchPutStd
 df_opt['Call (MC non-GARCH)'] = nonGarchFairPriceCall
+df_opt['Call (MC non-GARCH) STD'] = nonGarchCallStd
 df_opt['Put (MC GARCH)'] = garchFairPricePut
+df_opt['Put (MC GARCH) STD'] = garchPutStd
 df_opt['Call (MC GARCH)'] = garchFairPriceCall
+df_opt['Call (MC GARCH) STD'] = garchCallStd
+
 
 # =============================================================================
-# Get ARE Score
+# Plot Results
 # =============================================================================
+mcprices = resultsObj[318]['GARCH MC']['Call Prices']
+avgprices = []
+sumprice = 0
 
-def calcARE(sim, actual):
-    return ((sim - actual).abs() / actual).sum() * 100 / sim.size
-
-callGarch = calcARE(df_opt['Call (MC GARCH)'], df_opt['Call'])
-putGarch = calcARE(df_opt['Put (MC GARCH)'], df_opt['Put'])
-callNonGarch = calcARE(df_opt['Call (MC non-GARCH)'], df_opt['Call'])
-putNonGarch = calcARE(df_opt['Put (MC non-GARCH)'], df_opt['Put'])
-
-print("MC GARCH Call ARE:",callGarch)
-print("MC non-GARCH Call ARE:",callNonGarch)
-print("MC GARCH Put ARE:",putGarch)
-print("MC non-GARCH Put ARE:",putNonGarch)
-
-for key in masterObj.keys():
-    print(key,":",masterObj[key]["Volatility"])
-# =============================================================================
-# For testing only
-# =============================================================================
-res = masterObj[tmp_uly]['Garch Model']['Best Model']
-vol = res.forecast(horizon=100)
-np.sqrt(vol.residual_variance.iloc[-1].values)
-res['Best Model']
-
-df_opt.to_csv('garchPricerResult_1.0.1.csv')
-
-TS_logRt = TS_logRt[TS_logRt!=0]
-
-test = get_best_model(TS_logRt, 1, 1, 1, max_expDays)
-
-testml = test['Best Model']
-wn_test = testml.resid / testml._volatility
-[lbvalue, pvalue] = acorr_ljungbox(wn_test, lags = 10)
-pvalue[9]
+for i in range(len(mcprices)):
+    sumprice += mcprices[i]
+    avgprices.append(sumprice/(i+1))
 
 plt.figure(figsize=(20,10))
-plt.plot(wn_test)
+plt.title('Natural Gas MC GARCH Pricing')
+plt.xlabel('Option Price')
+plt.ylabel('Simulated Times')
+plt.plot(avgprices)
 plt.grid(True)
 plt.show()
-
-
-
-
-
-
-
-
-
-
 
 
