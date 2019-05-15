@@ -1,14 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.15)  15 MAY 2019 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.20)  15 MAY 2019 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2018-12-01>
-(c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -21,89 +22,90 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./structure.tex
-(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2019/05/04 3.31 The Babel package
-
-(c:/texlive/2019/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2019/05/04 3.31 Babel switching mechanism
 )
-(c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(./structure.tex
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
 
-(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2019/05/04 3.31 Babel common definitions
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 
-(c:/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count89
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 \MT@toks=\toks15
 \MT@count=\count90
-LaTeX Info: Redefining \textls on input line 790.
+LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen104
-LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
 \MT@listname@count=\count91
 
-(c:/texlive/2019/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2019/02/28 v2.7b Definitions specific to pdftex (RS)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/microtype/microtype-pdftex.
+def
+File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 914.
-LaTeX Info: Redefining \lslig on input line 914.
+LaTeX Info: Redefining \lsstyle on input line 913.
+LaTeX Info: Redefining \lslig on input line 913.
 \MT@outer@space=\skip43
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(c:/texlive/2019/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen105
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen106
 )
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count92
-LaTeX Info: Redefining \frac on input line 223.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count93
 \leftroot@=\count94
-LaTeX Info: Redefining \overline on input line 385.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count95
 \DOTSCASE@=\count96
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
 \big@size=\dimen107
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count97
 \c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
@@ -124,17 +126,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks21
 \thm@bodyfont=\toks22
@@ -146,15 +148,15 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip49
 \dth@everypar=\toks26
 )
-(c:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -167,13 +169,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-(c:/texlive/2019/texmf-dist/tex/latex/xcolor/svgnam.def
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen114
@@ -187,7 +189,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count104
 \c@ContinuedFloat=\count105
 )
-(c:/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen121
 \lightrulewidth=\dimen122
@@ -207,96 +209,94 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count109
 \@thisrulewidth=\dimen133
 )
-(c:/texlive/2019/texmf-dist/tex/latex/lastpage/lastpage.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen134
 \Gin@req@width=\dimen135
-)
-(c:/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/02/04 v3.8 Customized lists
+) (d:/Program Files/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip50
 \enit@outerparindent=\dimen136
 \enit@toks=\toks27
-\enit@inbox=\box29
-\enit@count@id=\count110
-\enitdp@description=\count111
+\enit@inbox=\box28
+\enitdp@description=\count110
 )
-(c:/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip51
-\multirow@cntb=\count112
+\multirow@cntb=\count111
 \multirow@dima=\skip52
 \bigstrutjot=\dimen137
 )
-(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count113
-\lst@gtempboxa=\box30
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count112
+\lst@gtempboxa=\box29
 \lst@token=\toks28
-\lst@length=\count114
+\lst@length=\count113
 \lst@currlwidth=\dimen138
-\lst@column=\count115
-\lst@pos=\count116
+\lst@column=\count114
+\lst@pos=\count115
 \lst@lostspace=\dimen139
 \lst@width=\dimen140
-\lst@newlines=\count117
-\lst@lineno=\count118
+\lst@newlines=\count116
+\lst@lineno=\count117
 \lst@maxwidth=\dimen141
 
-(c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count119
-\lst@skipnumbers=\count120
-\lst@framebox=\box31
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
+\lst@framebox=\box30
 )
-(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2019/02/27 1.8b listings configuration
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2019/02/27 1.8b (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/02/27 1.8b listings language file
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
 )
-(c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/02/27 1.8b listings language file
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
 )
-(c:/texlive/2019/texmf-dist/tex/latex/sectsty/sectsty.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
-(c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count121
-\Gm@cntv=\count122
-\c@Gm@tempcnt=\count123
+\Gm@cnth=\count120
+\Gm@cntv=\count121
+\c@Gm@tempcnt=\count122
 \Gm@bindingoffset=\dimen142
 \Gm@wd@mp=\dimen143
 \Gm@odd@mp=\dimen144
@@ -307,38 +307,36 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks29
 )
-(c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks30
 \inpenc@posthook=\toks31
 )
-(c:/texlive/2019/texmf-dist/tex/latex/xcharter/XCharter.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/xcharter/XCharter.sty
 Package: XCharter 2017/12/19 v1.112
 
 `XCharter' v1.112, 2017/12/19 Text macros for XCharter, an extension of Charter
- (msharpe) (c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-
-(c:/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
+ (msharpe) (d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
 
-(c:/texlive/2019/texmf-dist/tex/latex/base/t2aenc.dfu
-File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0237 (decimal 567)
    defining Unicode char U+0400 (decimal 1024)
    defining Unicode char U+0401 (decimal 1025)
    defining Unicode char U+0402 (decimal 1026)
@@ -521,13 +519,13 @@ File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+232A (decimal 9002)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/ly1/ly1enc.def
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/ly1/ly1enc.def
 File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
 Now handling font encoding LY1 ...
 ... processing UTF-8 mapping file for font encoding LY1
 
-(c:/texlive/2019/texmf-dist/tex/latex/base/ly1enc.dfu
-File: ly1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/ly1enc.dfu
+File: ly1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A2 (decimal 162)
@@ -631,7 +629,6 @@ File: ly1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0237 (decimal 567)
    defining Unicode char U+02C6 (decimal 710)
    defining Unicode char U+02DC (decimal 732)
    defining Unicode char U+2013 (decimal 8211)
@@ -647,17 +644,17 @@ File: ly1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2122 (decimal 8482)
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
 
-(c:/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -671,13 +668,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
-File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -813,7 +810,7 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/mweights/mweights.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/mweights/mweights.sty
 Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight 
 font packages. 
 LaTeX Info: Redefining \bfseries on input line 22.
@@ -822,30 +819,30 @@ LaTeX Info: Redefining \rmfamily on input line 38.
 LaTeX Info: Redefining \sffamily on input line 66.
 LaTeX Info: Redefining \ttfamily on input line 94.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count124
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count123
 )
-(c:/texlive/2019/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks32
 \XKV@tempa@toks=\toks33
 )
-\XKV@depth=\count125
+\XKV@depth=\count124
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
-(c:/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip53
 \f@nch@O@elh=\skip54
@@ -857,30 +854,24 @@ s
 \f@nch@O@olf=\skip60
 \f@nch@O@orf=\skip61
 )
-(c:/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip62
 \thanksmargin=\skip63
 \droptitle=\skip64
 )
-(c:/texlive/2019/texmf-dist/tex/latex/lettrine/lettrine.sty
-File: lettrine.sty 2019-04-06 v2.22 (Daniel Flipo)
-
-(c:/texlive/2019/texmf-dist/tex/generic/minifp/minifp.sty
-Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
--based programing language.
-\MFP@loopctr=\count126
-)
-\c@DefaultLines=\count127
-\c@DefaultDepth=\count128
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
+\c@DefaultLines=\count125
+\c@DefaultDepth=\count126
 \DefaultFindent=\dimen150
 \DefaultNindent=\dimen151
 \DefaultSlope=\dimen152
 \DiscardVskip=\dimen153
-\L@lbox=\box32
-\L@tbox=\box33
-\c@L@lines=\count129
-\c@L@depth=\count130
+\L@lbox=\box31
+\L@tbox=\box32
+\c@L@lines=\count127
+\c@L@depth=\count128
 \L@Pindent=\dimen154
 \L@Findent=\dimen155
 \L@Nindent=\dimen156
@@ -890,45 +881,42 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 \L@slope=\dimen160
 \L@height=\dimen161
 \L@novskip=\dimen162
-\L@target@ht=\dimen163
-\L@target@dp=\dimen164
-\L@target@tht=\dimen165
-\LettrineWidth=\dimen166
-\LettrineHeight=\dimen167
-\LettrineDepth=\dimen168
-\Llist@everypar=\toks34
+\LettrineWidth=\dimen163
+\LettrineHeight=\dimen164
+\LettrineDepth=\dimen165
 
 Loading lettrine.cfg
-(c:/texlive/2019/texmf-dist/tex/latex/lettrine/lettrine.cfg))
-(c:/texlive/2019/texmf-dist/tex/latex/base/fix-cm.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 
-(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.sty
-(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count131
-\decimalpart=\count132
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count129
+\decimalpart=\count130
 )
-Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -936,70 +924,71 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
 )))
-(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count133
+\lrq@indent=\count131
 
-(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count134
-\c@listtotal=\count135
-\c@listcount=\count136
-\c@liststart=\count137
-\c@liststop=\count138
-\c@citecount=\count139
-\c@citetotal=\count140
-\c@multicitecount=\count141
-\c@multicitetotal=\count142
-\c@instcount=\count143
-\c@maxnames=\count144
-\c@minnames=\count145
-\c@maxitems=\count146
-\c@minitems=\count147
-\c@citecounter=\count148
-\c@maxcitecounter=\count149
-\c@savedcitecounter=\count150
-\c@uniquelist=\count151
-\c@uniquename=\count152
-\c@refsection=\count153
-\c@refsegment=\count154
-\c@maxextratitle=\count155
-\c@maxextratitleyear=\count156
-\c@maxextraname=\count157
-\c@maxextradate=\count158
-\c@maxextraalpha=\count159
-\c@abbrvpenalty=\count160
-\c@highnamepenalty=\count161
-\c@lownamepenalty=\count162
-\c@maxparens=\count163
-\c@parenlevel=\count164
-\blx@tempcnta=\count165
-\blx@tempcntb=\count166
-\blx@tempcntc=\count167
-\blx@maxsection=\count168
-\blx@maxsegment@0=\count169
-\blx@notetype=\count170
-\blx@parenlevel@text=\count171
-\blx@parenlevel@foot=\count172
-\blx@sectionciteorder@0=\count173
-\blx@entrysetcounter=\count174
+\c@tabx@nest=\count132
+\c@listtotal=\count133
+\c@listcount=\count134
+\c@liststart=\count135
+\c@liststop=\count136
+\c@citecount=\count137
+\c@citetotal=\count138
+\c@multicitecount=\count139
+\c@multicitetotal=\count140
+\c@instcount=\count141
+\c@maxnames=\count142
+\c@minnames=\count143
+\c@maxitems=\count144
+\c@minitems=\count145
+\c@citecounter=\count146
+\c@savedcitecounter=\count147
+\c@uniquelist=\count148
+\c@uniquename=\count149
+\c@refsection=\count150
+\c@refsegment=\count151
+\c@maxextratitle=\count152
+\c@maxextratitleyear=\count153
+\c@maxextradate=\count154
+\c@maxextraalpha=\count155
+\c@abbrvpenalty=\count156
+\c@highnamepenalty=\count157
+\c@lownamepenalty=\count158
+\c@maxparens=\count159
+\c@parenlevel=\count160
+\blx@tempcnta=\count161
+\blx@tempcntb=\count162
+\blx@tempcntc=\count163
+\blx@maxsection=\count164
+\blx@maxsegment@0=\count165
+\blx@notetype=\count166
+\blx@parenlevel@text=\count167
+\blx@parenlevel@foot=\count168
+\blx@sectionciteorder@0=\count169
 \labelnumberwidth=\skip65
 \labelalphawidth=\skip66
 \biblabelsep=\skip67
@@ -1009,88 +998,88 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibparsep=\skip71
 \bibhang=\skip72
 \blx@bcfin=\read1
-\blx@bcfout=\write3
-\c@mincomprange=\count175
-\c@maxcomprange=\count176
-\c@mincompwidth=\count177
+\blx@bcfout=\write4
+\c@mincomprange=\count170
+\c@maxcomprange=\count171
+\c@mincompwidth=\count172
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count178
-\c@savedafterword=\count179
-\c@annotator=\count180
-\c@savedannotator=\count181
-\c@author=\count182
-\c@savedauthor=\count183
-\c@bookauthor=\count184
-\c@savedbookauthor=\count185
-\c@commentator=\count186
-\c@savedcommentator=\count187
-\c@editor=\count188
-\c@savededitor=\count189
-\c@editora=\count190
-\c@savededitora=\count191
-\c@editorb=\count192
-\c@savededitorb=\count193
-\c@editorc=\count194
-\c@savededitorc=\count195
-\c@foreword=\count196
-\c@savedforeword=\count197
-\c@holder=\count198
-\c@savedholder=\count199
-\c@introduction=\count266
-\c@savedintroduction=\count267
-\c@namea=\count268
-\c@savednamea=\count269
-\c@nameb=\count270
-\c@savednameb=\count271
-\c@namec=\count272
-\c@savednamec=\count273
-\c@translator=\count274
-\c@savedtranslator=\count275
-\c@shortauthor=\count276
-\c@savedshortauthor=\count277
-\c@shorteditor=\count278
-\c@savedshorteditor=\count279
-\c@labelname=\count280
-\c@savedlabelname=\count281
-\c@institution=\count282
-\c@savedinstitution=\count283
-\c@lista=\count284
-\c@savedlista=\count285
-\c@listb=\count286
-\c@savedlistb=\count287
-\c@listc=\count288
-\c@savedlistc=\count289
-\c@listd=\count290
-\c@savedlistd=\count291
-\c@liste=\count292
-\c@savedliste=\count293
-\c@listf=\count294
-\c@savedlistf=\count295
-\c@location=\count296
-\c@savedlocation=\count297
-\c@organization=\count298
-\c@savedorganization=\count299
-\c@origlocation=\count300
-\c@savedoriglocation=\count301
-\c@origpublisher=\count302
-\c@savedorigpublisher=\count303
-\c@publisher=\count304
-\c@savedpublisher=\count305
-\c@language=\count306
-\c@savedlanguage=\count307
-\c@origlanguage=\count308
-\c@savedoriglanguage=\count309
-\c@pageref=\count310
-\c@savedpageref=\count311
+\c@afterword=\count173
+\c@savedafterword=\count174
+\c@annotator=\count175
+\c@savedannotator=\count176
+\c@author=\count177
+\c@savedauthor=\count178
+\c@bookauthor=\count179
+\c@savedbookauthor=\count180
+\c@commentator=\count181
+\c@savedcommentator=\count182
+\c@editor=\count183
+\c@savededitor=\count184
+\c@editora=\count185
+\c@savededitora=\count186
+\c@editorb=\count187
+\c@savededitorb=\count188
+\c@editorc=\count189
+\c@savededitorc=\count190
+\c@foreword=\count191
+\c@savedforeword=\count192
+\c@holder=\count193
+\c@savedholder=\count194
+\c@introduction=\count195
+\c@savedintroduction=\count196
+\c@namea=\count197
+\c@savednamea=\count198
+\c@nameb=\count199
+\c@savednameb=\count266
+\c@namec=\count267
+\c@savednamec=\count268
+\c@translator=\count269
+\c@savedtranslator=\count270
+\c@shortauthor=\count271
+\c@savedshortauthor=\count272
+\c@shorteditor=\count273
+\c@savedshorteditor=\count274
+\c@labelname=\count275
+\c@savedlabelname=\count276
+\c@institution=\count277
+\c@savedinstitution=\count278
+\c@lista=\count279
+\c@savedlista=\count280
+\c@listb=\count281
+\c@savedlistb=\count282
+\c@listc=\count283
+\c@savedlistc=\count284
+\c@listd=\count285
+\c@savedlistd=\count286
+\c@liste=\count287
+\c@savedliste=\count288
+\c@listf=\count289
+\c@savedlistf=\count290
+\c@location=\count291
+\c@savedlocation=\count292
+\c@organization=\count293
+\c@savedorganization=\count294
+\c@origlocation=\count295
+\c@savedoriglocation=\count296
+\c@origpublisher=\count297
+\c@savedorigpublisher=\count298
+\c@publisher=\count299
+\c@savedpublisher=\count300
+\c@language=\count301
+\c@savedlanguage=\count302
+\c@origlanguage=\count303
+\c@savedoriglanguage=\count304
+\c@pageref=\count305
+\c@savedpageref=\count306
 \shorthandwidth=\skip73
 \shortjournalwidth=\skip74
 \shortserieswidth=\skip75
@@ -1108,14 +1097,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 
 
 Package biblatex Warning: Using fall-back BibTeX(8) backend:
@@ -1124,42 +1113,39 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-\c@textcitecount=\count312
-\c@textcitetotal=\count313
-\c@textcitemaxnames=\count314
-\c@biburlnumpenalty=\count315
-\c@biburlucpenalty=\count316
-\c@biburllcpenalty=\count317
-\c@smartand=\count318
+ (d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+\c@textcitecount=\count307
+\c@textcitetotal=\count308
+\c@textcitemaxnames=\count309
+\c@biburlnumpenalty=\count310
+\c@biburlucpenalty=\count311
+\c@biburllcpenalty=\count312
+\c@smartand=\count313
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-natbib.def
-File: blx-natbib.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
- overwriting.
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count319
-\c@bbx:relatedtotal=\count320
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count314
+\c@bbx:relatedtotal=\count315
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1170,27 +1156,26 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )))
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
-\csq@reset=\count321
-\csq@gtype=\count322
-\csq@glevel=\count323
-\csq@qlevel=\count324
-\csq@maxlvl=\count325
-\csq@tshold=\count326
-\csq@ltx@everypar=\toks35
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/02/11 v5.2c context-sensitive quotations (JAW)
+\csq@reset=\count316
+\csq@gtype=\count317
+\csq@glevel=\count318
+\csq@qlevel=\count319
+\csq@maxlvl=\count320
+\csq@tshold=\count321
+\csq@ltx@everypar=\toks34
 
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/02/11 v5.2c csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
@@ -1198,7 +1183,7 @@ Package csquotes Info: Enabling multilingual quotes.
 LaTeX Font Info:    Try loading font information for T1+XCharter-TLF on input l
 ine 45.
 
-(c:/texlive/2019/texmf-dist/tex/latex/xcharter/T1XCharter-TLF.fd
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/xcharter/T1XCharter-TLF.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-
 TLF.
 )
@@ -1206,13 +1191,13 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 45.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux)
+
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -1230,14 +1215,14 @@ LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 45.
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 45.
 
-(c:/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 45.
 LaTeX Font Info:    Try loading font information for LY1+ptm on input line 45.
 
-(c:/texlive/2019/texmf-dist/tex/latex/ly1/ly1ptm.fd
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 45.
@@ -1254,30 +1239,31 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-bch.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/microtype/mt-bch.cfg
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
-(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(d:/Program Files/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
-\scratchdimen=\dimen169
-\scratchbox=\box34
-\nofMPsegments=\count328
-\nofMParguments=\count329
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count330
-\MPscratchDim=\dimen170
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
-\everyMPtoPDFconversion=\toks37
-) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+\scratchcounter=\count322
+\scratchdimen=\dimen166
+\scratchbox=\box33
+\nofMPsegments=\count323
+\nofMParguments=\count324
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen167
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
+\everyMPtoPDFconversion=\toks36
+)
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(d:/Program Files/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1287,7 +1273,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cf
+g
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1297,7 +1284,7 @@ Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 45.
-\c@lstlisting=\count333
+\c@lstlisting=\count328
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1333,23 +1320,28 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count334
-\c@mv@boldtabular=\count335
+\c@mv@tabular=\count329
+\c@mv@boldtabular=\count330
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Input encoding 'utf8' specified.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout3 = `main-blx.bib'.
+\openout4 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
+
+Package biblatex Warning: File 'main.bbl' is wrong format version - expected 2.
+9.
+
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 45.
 Package biblatex Info: Reference segment=0 on input line 45.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 47.
- (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1phv.fd
+
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1359,24 +1351,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 47.
 
-(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
@@ -1394,14 +1386,9 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/XCharter-TLF/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 28.94pt on input line 55.
+(Font)              scaled to size 28.93999pt on input line 55.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 42.55861pt on input line 55.
-Package lettrine.sty Info: Targeted height = 28.94pt
-(lettrine.sty)             (no accent, loversize=0),
-(lettrine.sty)             Lettrine height = 28.93987pt (\color {DarkGoldenrod}
-{T});
-(lettrine.sty)             reported on input line 55.
+(Font)              scaled to size 42.56212pt on input line 55.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
@@ -1416,14 +1403,14 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 
 Underfull \vbox (badness 1742) has occurred while \output is active []
 
- [1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{d:/Program Files/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+XCharter-TLF on input 
 line 93.
 
-(c:/texlive/2019/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
+(d:/Program Files/texlive/2018/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
 File: TS1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for TS1/XCharte
 r-TLF.
 )
@@ -1564,39 +1551,43 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20162 strings out of 492616
- 326914 string characters out of 6133219
- 1258345 words of memory out of 5000000
- 23530 multiletter control sequences out of 15000+600000
- 133794 words of font info for 201 fonts, out of 8000000 for 9000
+ 19563 strings out of 492649
+ 321201 string characters out of 6126736
+ 1236517 words of memory out of 5000000
+ 22898 multiletter control sequences out of 15000+600000
+ 133758 words of font info for 201 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,17n,80p,1267b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
-ive/2019/texmf-dist/fonts/enc/dvips/xcharter/xch_q7u3cc.enc}{c:/texlive/2019/te
-xmf-dist/fonts/enc/dvips/xcharter/xch_tuu2ww.enc}{c:/texlive/2019/texmf-dist/fo
-nts/enc/dvips/xcharter/xch_a3psji.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvi
-ps/base/8r.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter
--Bold.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter-Ital
-ic.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.p
-fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/201
-9/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
-fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
-per/sftt0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (26 pages, 1361672 bytes).
+ 42i,17n,80p,1267b,1818s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/Program Files/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+1.enc}{d:/Program Files/texlive/2018/texmf-dist/fonts/enc/dvips/xcharter/xch_q7
+u3cc.enc}{d:/Program Files/texlive/2018/texmf-dist/fonts/enc/dvips/xcharter/xch
+_tuu2ww.enc}{d:/Program Files/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.e
+nc}<d:/Program Files/texlive/2018/texmf-dist/fonts/type1/public/xcharter/XChart
+er-Bold.pfb><d:/Program Files/texlive/2018/texmf-dist/fonts/type1/public/xchart
+er/XCharter-Italic.pfb><d:/Program Files/texlive/2018/texmf-dist/fonts/type1/pu
+blic/xcharter/XCharter-Roman.pfb><d:/Program Files/texlive/2018/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb><d:/Program Files/texlive/2018/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Program Files/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Program Files/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/Program Files/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Program Files/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/Program Files/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Program File
+s/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Program F
+iles/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Progra
+m Files/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/Pro
+gram Files/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d
+:/Program Files/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pf
+b><d:/Program Files/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb><d:/Program Files/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb><d:/Program Files/texlive/2018/texmf-dist/fonts/type1/public/cm
+-super/sftt0800.pfb><d:/Program Files/texlive/2018/texmf-dist/fonts/type1/urw/h
+elvetic/uhvb8a.pfb><d:/Program Files/texlive/2018/texmf-dist/fonts/type1/urw/he
+lvetic/uhvro8a.pfb>
+Output written on main.pdf (26 pages, 1342817 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  38968 words of extra memory for PDF output out of 42996 (max. 10000000)
 
