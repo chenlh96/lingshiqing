@@ -14,12 +14,13 @@ uly_names = ['Crude Oil WTI', 'Ethanol', 'Gold', 'Silver', 'Natural Gas']
 uly_init = df_uly[uly_names].tail(1)
 df_opt['bdays'] = 1 + np.busday_count(df_opt['Start Date'].values.astype('datetime64[D]'), df_opt['Maturity Date'].values.astype('datetime64[D]'))
 
-df_uly_vol = df_uly[uly_names].std(skipna=True)
+df_uly_vol = np.log(df_uly[uly_names].pct_change() + 1).std(skipna=True) * 100
 
 oneOverRho = 3
-df_vols = pd.DataFrame([[0.3, 0.01, 0.4, 0.1, 0.001]], columns = uly_names)
-df_units = pd.DataFrame([[0.01, 0.0001, 1, 0.001, 0.01]], columns = uly_names)
+
+df_units = pd.DataFrame([[0.01, 0.0001, 1, 0.01, 0.001]], columns = uly_names)
 bdays_year = 252
+bdays_month = 21
     
 # =============================================================================
 # Define risk free rate, reference to US treasury yield curve as of 20190322
@@ -68,6 +69,21 @@ def getRiskFreeRate(inputDate):
             return forwardCurveDict[curvePoints[i + 1]]
     return 0
 
+# Function to get risk free rate given a date (datetime.date object)
+def getYeildCurveRate(inputDate):
+    input_date = inputDate.date()
+    for i in range(len(forwardCurveDict)):
+        datePoint1 = datetime.strptime(curvePoints[i],'%Y-%m-%d').date()
+        datePoint2 = datetime.strptime(curvePoints[i + 1],'%Y-%m-%d').date()
+        if (input_date >= datePoint1 and input_date < datePoint2):
+            return yieldCurveDict[curvePoints[i + 1]]
+    return 0
+
+def are(sim, actual):
+    return ((sim - actual).abs() / actual).sum() * 100 / sim.size
+
+sim_calls, sim_puts, diff = [], [], []
+call_stds, put_stds = [], []
 
 for row in df_opt.index:
     # Retrieve the name of the underlying
@@ -77,17 +93,93 @@ for row in df_opt.index:
     tmp_steps = df_opt['bdays'][row]
     if tmp_steps > bdays_year:
         tmp_steps = bdays_year
+    elif tmp_steps < bdays_month:
+        tmp_steps = bdays_month
     tmp_init = uly_init[tmp_uly][0]
     tmp_time_period = 1 / bdays_year
     tmp_vol = df_uly_vol[tmp_uly]
-    tmp_ir = get_interest_rate(tmp_steps)
-    tmp_rates = [getRiskFreeRate(tmp_maturity - timedelta(d)) for d in range(tmp_steps)]
+    tmp_rates = [getRiskFreeRate(tmp_maturity - timedelta(d)) / 100 for d in range(tmp_steps)]
     
     tmp_call = df_opt['Call'][row]
+    tmp_put = df_opt['Put'][row]
     tmp_unit = df_units[tmp_uly][0]
     
     pricer = asianOptionBinomialTree(tmp_steps, tmp_vol, tmp_time_period, oneOverRho, tmp_rates)
-    sim = pricer.getOptionPrice(tmp_init, tmp_strike * tmp_unit)
-    print('undeylying: %s; bdays: %d, strile: %6.3f, init: %6.3f --> simulate: %6.3f; actual call: %6.3f' \
-          % (tmp_uly, tmp_steps, tmp_strike* tmp_unit, tmp_init, sim, tmp_call))
+    sim_call, c_std = pricer.getOptionPrice(tmp_init, tmp_strike * tmp_unit, True)
+    sim_put, p_std = pricer.getOptionPrice(tmp_init, tmp_strike * tmp_unit, False)
+    
+    sim_calls.append(sim_call)
+    sim_puts.append(sim_put)
+    call_stds.append(c_std)
+    put_stds.append(p_std)
+    diff.append(tmp_init - tmp_strike * tmp_unit)
+    print('under: %s; bdays: %d, K: %6.3f, S: %6.3f --> sim: call: %6.3f put: %6.3f; actual call: %6.3f, put: %6.3f' \
+          % (tmp_uly, tmp_steps, tmp_strike* tmp_unit, tmp_init, sim_call,sim_put, tmp_call, tmp_put
+             ))
+
+df_opt['biTree sim put'] = sim_puts  
+df_opt['biTree sim call'] = sim_calls
+df_opt['biTree sim put std'] = put_stds
+df_opt['biTree sim call std'] = call_stds
+df_opt['Diff'] = diff
+
+for key in np.unique(df_opt['Underlying']):
+    tmpCol = df_opt[df_opt['Underlying']==key]
+
+    callGarch = are(tmpCol['biTree sim call'], tmpCol['Call'])
+    putGarch = are(tmpCol['biTree sim put'], tmpCol['Put'])
+
+    print("underlying: ", key)
+    print("MC GARCH Put ARE:",putGarch)
+    print("MC GARCH Call ARE:",callGarch)
+    
+
+are_call = are(df_opt['biTree sim call'], df_opt['Call'])
+are_put = are(df_opt['biTree sim put'], df_opt['Put'])
+df_opt.to_csv("../tmp_simulation_biTree.csv", index=False)
+print("ARE result: call: %6.3f , put: %6.3f" % (are_call, are_put))
+
+
+from scipy.stats import norm
+
+def europeanOptionCalculator(asset_price, strike, volatility, interest_rate, maturity):
+    den = volatility * np.sqrt(maturity)
+    d1 = np.log(asset_price / strike) + (interest_rate + (volatility **2) / 2) * maturity
+    d1 /= den
+    d2 = d1 - den
+    discount_factor = np.exp(- interest_rate * maturity)
+    call  = asset_price * norm.cdf(d1) - strike * discount_factor * norm.cdf(d2)
+    put = strike * discount_factor * norm.cdf(-d2) - asset_price * norm.cdf(-d1)
+    
+    return call, put
+
+euro_calls, euro_puts = [], []
+for row in df_opt.index:
+    # Retrieve the name of the underlying
+    tmp_uly = df_opt['Underlying'][row][:-8]
+    
+    tmp_strike = df_opt['Strike'][row]
+    tmp_maturity = df_opt['Maturity Date'][row]
+    tmp_steps = df_opt['bdays'][row] / 365
+    
+    tmp_init = uly_init[tmp_uly][0]
+    tmp_vol = df_uly_vol[tmp_uly]
+    tmp_unit = df_units[tmp_uly][0]
+    tmp_rates = getYeildCurveRate(tmp_maturity) / 100
+    
+    c, p = europeanOptionCalculator(tmp_init, tmp_unit * tmp_strike, tmp_vol, tmp_rates, tmp_steps)
+    print('S: %6.3f K: %6.3f vol: %6.3f r: %6.3f tau: %d call: %6.3f put: %6.3f' % (tmp_init, tmp_unit * tmp_strike, tmp_vol, tmp_rates, tmp_steps, c, p))
+    euro_calls.append(c)
+    euro_puts.append(p)
+    
+sum(df_opt['biTree sim put'] < euro_puts)
+sum(df_opt['biTree sim call'] < euro_calls)
+    
+df_euro = pd.DataFrame(data = {'Call': euro_calls, 'Put': euro_puts})
+df_euro.to_csv('../tmp_euro.csv', index=False)
+
+
+    
+
+
 

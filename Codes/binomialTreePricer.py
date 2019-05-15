@@ -2,12 +2,12 @@ import numpy as np
 
 class asianOptionBinomialTree:
 
-    def __init__(self, num_steps, volatility, time_period, oneOverRho, interest_rate):
+    def __init__(self, num_steps, volatility, time_period, oneOverRho, interest_rate, reop_rate = 0.01):
         self.num_steps = num_steps
         self.volatility = volatility
         self.time_period = time_period
         self.oneOverRho = oneOverRho
-        self.interest = np.array(interest_rate)
+        self.interest = np.array(interest_rate) - reop_rate
         self.discount_factor = np.exp(-1 * self.interest * self.time_period)
         self.half_len_grid = self.num_steps * self.oneOverRho
 
@@ -15,7 +15,7 @@ class asianOptionBinomialTree:
         self.assetPriceTree = np.zeros((self.num_steps + 1, self.num_steps + 1))
         self.optionPriceTree = np.zeros((self.num_steps + 1,  2 * self.num_steps * self.oneOverRho + 1))
 
-    def forwardInduction(self):
+    def forwardInduction(self, is_call):
         self.up_factor = np.exp(self.volatility * np.sqrt(self.time_period))
 
         for i in range(self.num_steps + 1):
@@ -29,7 +29,12 @@ class asianOptionBinomialTree:
             self.averagePriceTree[j] = self.init_price * (self.up_factor ** (jump / self.oneOverRho))
         for s in range(self.num_steps + 1):
             for k in range(2 * self.num_steps * self.oneOverRho + 1):
-                self.optionPriceTree[s, k] = max(self.averagePriceTree[k] - self.strike, 0)
+                if is_call:
+                    self.optionPriceTree[s, k] = max(self.averagePriceTree[k] - self.strike, 0)
+                    self.std_payoff = np.std(self.averagePriceTree -  - self.strike)
+                else:
+                    self.optionPriceTree[s, k] = max(self.strike - self.averagePriceTree[k], 0)
+                    self.std_payoff = np.std(self.strike - self.averagePriceTree)
 
     def grid(self, n, k, j, plus): 
         numerator = np.zeros((len(j), len(k)))
@@ -78,14 +83,14 @@ class asianOptionBinomialTree:
             self.optionPriceTree[j_idx_ext[:(n + 1)], k_idx + self.half_len_grid] *= self.discount_factor[n]
 #            print(np.round(self.optionPriceTree[j_idx_ext[:(n + 1)], k_idx + self.half_len_grid]))
             
-            
 
-    def getOptionPrice(self, init_price, strike):
+    def getOptionPrice(self, init_price, strike, is_call=True):
         self.init_price = init_price
         self.strike = strike
-        self.forwardInduction()
+        self.is_call =is_call
+        self.forwardInduction(self.is_call)
         self.backwardInduction()
-        return self.optionPriceTree[0, self.half_len_grid]
+        return self.optionPriceTree[0, self.half_len_grid], self.std_payoff
 
 
 
