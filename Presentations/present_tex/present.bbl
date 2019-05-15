@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{carverhill1990average}
+A.~P. Carverhill and L.~J Clewlow.
+\newblock Valuing average rate (asian) options.
+\newblock {\em Risk}, 3:33--36, 1990.
+
+\bibitem{benhamou2000fast}
+Eric Benhamou.
+\newblock Fast fourier transform for discrete asian options.
+\newblock In {\em EFMA 2001 Lugano Meetings}, 2000.
+
+\bibitem{turnbull1991quick}
+Stuart~M Turnbull and Lee~Macdonald Wakeman.
+\newblock A quick algorithm for pricing european average options.
+\newblock {\em Journal of financial and quantitative analysis}, 26(3):377--389,
+  1991.
+
+\bibitem{levy1992pricing}
+Edmond Levy.
+\newblock Pricing european average rate currency options.
+\newblock {\em Journal of International Money and Finance}, 11(5):474--491,
+  1992.
+
+\bibitem{kemna1990pricing}
+Angelien~GZ Kemna and Antonius~CF Vorst.
+\newblock A pricing method for options based on average asset values.
+\newblock {\em Journal of Banking \& Finance}, 14(1):113--129, 1990.
+
+\bibitem{zhu2015model}
+Ke~Zhu and Shiqing Ling.
+\newblock Model-based pricing for financial derivatives.
+\newblock {\em Journal of Econometrics}, 187(2):447--457, 2015.
+
+\bibitem{lorenzo2011pricing}
+Mercuri Lorenzo.
+\newblock Pricing asian options in affine garch models.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  14(02):313--333, 2011.
+
+\end{thebibliography}

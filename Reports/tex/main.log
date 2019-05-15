@@ -1,11 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.14)  15 MAY 2019 02:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.5.15)  15 MAY 2019 14:43
 entering extended mode
-**./main.tex
-(main.tex
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
 LaTeX2e <2018-12-01>
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+(c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
+(c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -19,44 +21,32 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(structure.tex
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2019/04/01 3.28 The Babel package
+) (./structure.tex
+(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/05/04 3.31 The Babel package
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2019/04/01 3.28 Babel switching mechanism
+(c:/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
 )
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engli
-sh.ldf"
+(c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2019/04/01 3.28 Babel common definitions
+(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/05/04 3.31 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.de
-f")
+(c:/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count89
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype
-.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
@@ -67,8 +57,7 @@ LaTeX Info: Redefining \textls on input line 790.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
 \MT@listname@count=\count91
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype
--pdftex.def"
+(c:/texlive/2019/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2019/02/28 v2.7b Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 914.
@@ -77,30 +66,27 @@ LaTeX Info: Redefining \lslig on input line 914.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype
-.cfg"
+(c:/texlive/2019/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
-"
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen105
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen106
-) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
-y"
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count92
@@ -141,15 +127,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks21
 \thm@bodyfont=\toks22
@@ -160,18 +145,16 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip48
 \thm@headsep=\skip49
 \dth@everypar=\toks26
-) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
-"
+)
+(c:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.
-cfg"
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex
-.def"
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -184,15 +167,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\svgnam.def"
+(c:/texlive/2019/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.st
-y"
+(c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen114
@@ -206,9 +187,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count104
 \c@ContinuedFloat=\count105
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.s
-ty"
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
+(c:/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen121
 \lightrulewidth=\dimen122
 \cmidrulewidth=\dimen123
@@ -227,23 +207,19 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count109
 \@thisrulewidth=\dimen133
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lastpage\lastpage.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphi
-cs.cfg"
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
@@ -251,8 +227,7 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen134
 \Gin@req@width=\dimen135
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/02/04 v3.8 Customized lists
 \labelindent=\skip50
 \enit@outerparindent=\dimen136
@@ -261,16 +236,14 @@ Package: enumitem 2019/02/04 v3.8 Customized lists
 \enit@count@id=\count110
 \enitdp@description=\count111
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip51
 \multirow@cntb=\count112
 \multirow@dima=\skip52
 \bigstrutjot=\dimen137
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count113
 \lst@gtempboxa=\box30
 \lst@token=\toks28
@@ -284,51 +257,41 @@ ty"
 \lst@lineno=\count118
 \lst@maxwidth=\dimen141
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.st
-y"
+(c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count119
 \lst@skipnumbers=\count120
 \lst@framebox=\box31
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.c
-fg"
+(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang2.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2019/02/27 1.8b listings language file
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang3.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2019/02/27 1.8b listings language file
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sectsty\sectsty.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.st
-y"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count121
@@ -343,36 +306,32 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen148
 \Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks29
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.c
-fg"))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+)
+(c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
+(c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks30
 \inpenc@posthook=\toks31
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcharter\XCharter.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/xcharter/XCharter.sty
 Package: XCharter 2017/12/19 v1.112
 
 `XCharter' v1.112, 2017/12/19 Text macros for XCharter, an extension of Charter
- (msharpe)
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+ (msharpe) (c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2aenc.def
-"
+(c:/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
- ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t2aenc.dfu"
+
+(c:/texlive/2019/texmf-dist/tex/latex/base/t2aenc.dfu
 File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -561,12 +520,13 @@ File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+2329 (decimal 9001)
    defining Unicode char U+232A (decimal 9002)
    defining Unicode char U+2423 (decimal 9251)
-)) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ly1\ly1enc.def"
+))
+(c:/texlive/2019/texmf-dist/tex/latex/ly1/ly1enc.def
 File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
 Now handling font encoding LY1 ...
 ... processing UTF-8 mapping file for font encoding LY1
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ly1enc.dfu"
+(c:/texlive/2019/texmf-dist/tex/latex/base/ly1enc.dfu
 File: ly1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -687,16 +647,16 @@ File: ly1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2122 (decimal 8482)
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
+(c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ptm.fd"
+(c:/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -711,12 +671,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -853,8 +813,7 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mweights\mweights.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/mweights/mweights.sty
 Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight 
 font packages. 
 LaTeX Info: Redefining \bfseries on input line 22.
@@ -863,35 +822,29 @@ LaTeX Info: Redefining \rmfamily on input line 38.
 LaTeX Info: Redefining \sffamily on input line 66.
 LaTeX Info: Redefining \ttfamily on input line 94.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count124
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontaxes\fontaxes.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.t
-ex"
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.
-tex"
+(c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks32
 \XKV@tempa@toks=\toks33
 )
 \XKV@depth=\count125
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip53
@@ -904,19 +857,16 @@ s
 \f@nch@O@olf=\skip60
 \f@nch@O@orf=\skip61
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titling\titling.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip62
 \thanksmargin=\skip63
 \droptitle=\skip64
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lettrine\lettrine.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2019-04-06 v2.22 (Daniel Flipo)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/minifp\minifp.sty
-"
+(c:/texlive/2019/texmf-dist/tex/generic/minifp/minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 -based programing language.
 \MFP@loopctr=\count126
@@ -949,45 +899,36 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 \Llist@everypar=\toks34
 
 Loading lettrine.cfg
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lettrine\lettrine.c
-fg"))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fix-cm.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(c:/texlive/2019/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xstring\xstring.sty
-"
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xstring\xstring.t
-ex"
+(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.tex
 \integerpart=\count131
 \decimalpart=\count132
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexcm
-ds.sty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwarer
-r.sty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluatex
-.sty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.
-sty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -995,27 +936,26 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.
-sty"
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetkey
-s.sty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmds
-.sty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 )))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
+(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count133
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
+(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+))
+(c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+)
+(c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -1076,8 +1016,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def
-"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -1169,15 +1108,13 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-compat
-.def"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-bibtex
-.def"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-bibtex.def
 File: blx-bibtex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 
 
@@ -1187,9 +1124,7 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.d
-ef"
+ (c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 \c@textcitecount=\count312
 \c@textcitetotal=\count313
@@ -1202,8 +1137,7 @@ File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-natbib
-.def"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-natbib.def
 File: blx-natbib.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
  overwriting.
@@ -1211,14 +1145,12 @@ Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\author
-year.bbx"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 File: authoryear.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\standa
-rd.bbx"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count319
 \c@bbx:relatedtotal=\count320
@@ -1226,8 +1158,7 @@ File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\author
-year.cbx"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
 File: authoryear.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -1240,12 +1171,10 @@ Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.c
-fg"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )))
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.s
-ty"
+(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 \csq@reset=\count321
 \csq@gtype=\count322
@@ -1255,15 +1184,13 @@ Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 \csq@tshold=\count326
 \csq@ltx@everypar=\toks35
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.d
-ef"
+(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.c
-fg"
+(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
@@ -1271,8 +1198,7 @@ Package csquotes Info: Enabling multilingual quotes.
 LaTeX Font Info:    Try loading font information for T1+XCharter-TLF on input l
 ine 45.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcharter\t1xcharter
--tlf.fd"
+(c:/texlive/2019/texmf-dist/tex/latex/xcharter/T1XCharter-TLF.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-
 TLF.
 )
@@ -1281,13 +1207,12 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\englis
-h.lbx"
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (main.aux)
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -1305,13 +1230,14 @@ LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 45.
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 45.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2acmr.fd"
+(c:/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 45.
 LaTeX Font Info:    Try loading font information for LY1+ptm on input line 45.
- ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ly1\ly1ptm.fd"
+
+(c:/texlive/2019/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 45.
@@ -1328,13 +1254,11 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-bch.cf
-g"
+(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-bch.cfg
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pd
-f.mkii"
+(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count327
 \scratchdimen=\dimen169
@@ -1347,17 +1271,13 @@ f.mkii"
 \MPnumerator=\count331
 \makeMPintoPDFobject=\count332
 \everyMPtoPDFconversion=\toks37
-)
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-b
-ase.sty"
+) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty
-"
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefine
-keys.sty"
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1366,7 +1286,11 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
+
+(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1421,12 +1345,11 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(main.bbl)
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 45.
 Package biblatex Info: Reference segment=0 on input line 45.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 47.
-
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
+ (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1436,25 +1359,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 47.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-cmr.cf
-g"
+(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 47.
- ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msa.cf
-g"
+(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 47.
- ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msb.cf
-g"
+(c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
@@ -1494,15 +1416,14 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 
 Underfull \vbox (badness 1742) has occurred while \output is active []
 
- [1{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+XCharter-TLF on input 
 line 93.
 
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcharter\ts1xcharte
-r-tlf.fd"
+(c:/texlive/2019/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
 File: TS1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for TS1/XCharte
 r-TLF.
 )
@@ -1542,86 +1463,84 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 435.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 435.
- [6]
-Underfull \vbox (badness 2213) has occurred while \output is active []
-
- [7]
-[8
+ [6] [7] [8
 
 ]
-<priceCorrelation.jpg, id=47, 867.24pt x 867.24pt>
+<priceCorrelation.jpg, id=48, 867.24pt x 867.24pt>
 File: priceCorrelation.jpg Graphic file (type jpg)
 <use priceCorrelation.jpg>
-Package pdftex.def Info: priceCorrelation.jpg  used on input line 524.
+Package pdftex.def Info: priceCorrelation.jpg  used on input line 523.
 (pdftex.def)             Requested size: 483.69687pt x 483.70584pt.
-<logRtCorrelation.jpg, id=48, 867.24pt x 867.24pt>
+<logRtCorrelation.jpg, id=49, 867.24pt x 867.24pt>
 File: logRtCorrelation.jpg Graphic file (type jpg)
 <use logRtCorrelation.jpg>
-Package pdftex.def Info: logRtCorrelation.jpg  used on input line 530.
+Package pdftex.def Info: logRtCorrelation.jpg  used on input line 529.
 (pdftex.def)             Requested size: 483.69687pt x 483.70584pt.
-<Curdeoilmcconvergence1.png, id=49, 1445.4pt x 717.6411pt>
+<Curdeoilmcconvergence1.png, id=50, 1445.4pt x 717.6411pt>
 File: Curdeoilmcconvergence1.png Graphic file (type png)
 <use Curdeoilmcconvergence1.png>
-Package pdftex.def Info: Curdeoilmcconvergence1.png  used on input line 536.
+Package pdftex.def Info: Curdeoilmcconvergence1.png  used on input line 535.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
-<Ethanolmcconvergence1.png, id=51, 1387.584pt x 685.8423pt>
+<Ethanolmcconvergence1.png, id=52, 1387.584pt x 685.8423pt>
 File: Ethanolmcconvergence1.png Graphic file (type png)
 <use Ethanolmcconvergence1.png>
-Package pdftex.def Info: Ethanolmcconvergence1.png  used on input line 542.
+Package pdftex.def Info: Ethanolmcconvergence1.png  used on input line 541.
 (pdftex.def)             Requested size: 483.69687pt x 239.07515pt.
-<Naturalgasmcconvergence1.png, id=52, 1445.4pt x 717.6411pt>
+<Naturalgasmcconvergence1.png, id=53, 1445.4pt x 717.6411pt>
 File: Naturalgasmcconvergence1.png Graphic file (type png)
 <use Naturalgasmcconvergence1.png>
-Package pdftex.def Info: Naturalgasmcconvergence1.png  used on input line 548.
+Package pdftex.def Info: Naturalgasmcconvergence1.png  used on input line 547.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
-<Silvermcconvergence1.png, id=53, 1445.4pt x 717.6411pt>
+<Silvermcconvergence1.png, id=54, 1445.4pt x 717.6411pt>
 File: Silvermcconvergence1.png Graphic file (type png)
 <use Silvermcconvergence1.png>
-Package pdftex.def Info: Silvermcconvergence1.png  used on input line 554.
+Package pdftex.def Info: Silvermcconvergence1.png  used on input line 553.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
-<CrudeOilvol.png, id=54, 1445.4pt x 717.6411pt>
+<CrudeOilvol.png, id=55, 1445.4pt x 717.6411pt>
 File: CrudeOilvol.png Graphic file (type png)
 <use CrudeOilvol.png>
-Package pdftex.def Info: CrudeOilvol.png  used on input line 560.
+Package pdftex.def Info: CrudeOilvol.png  used on input line 559.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
-<Ethanolvol.png, id=55, 1445.4pt x 717.6411pt>
+<Ethanolvol.png, id=56, 1445.4pt x 717.6411pt>
 File: Ethanolvol.png Graphic file (type png)
 <use Ethanolvol.png>
-Package pdftex.def Info: Ethanolvol.png  used on input line 566.
+Package pdftex.def Info: Ethanolvol.png  used on input line 565.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
-<Goldvol.png, id=56, 1445.4pt x 717.6411pt>
+<Goldvol.png, id=57, 1445.4pt x 717.6411pt>
 File: Goldvol.png Graphic file (type png)
 <use Goldvol.png>
-Package pdftex.def Info: Goldvol.png  used on input line 572.
+Package pdftex.def Info: Goldvol.png  used on input line 571.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
-<Naturalgasvol.png, id=57, 1445.4pt x 717.6411pt>
+<Naturalgasvol.png, id=58, 1445.4pt x 717.6411pt>
 File: Naturalgasvol.png Graphic file (type png)
 <use Naturalgasvol.png>
-Package pdftex.def Info: Naturalgasvol.png  used on input line 578.
+Package pdftex.def Info: Naturalgasvol.png  used on input line 577.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
-<Silvervol.png, id=58, 1445.4pt x 717.6411pt>
+<Silvervol.png, id=59, 1445.4pt x 717.6411pt>
 File: Silvervol.png Graphic file (type png)
 <use Silvervol.png>
-Package pdftex.def Info: Silvervol.png  used on input line 584.
+Package pdftex.def Info: Silvervol.png  used on input line 583.
 (pdftex.def)             Requested size: 483.69687pt x 240.15118pt.
- [9 <./priceCorrelation.jpg>] [10 <./logRtCorrelation.jpg>] [11 <./Curdeoilmcco
-nvergence1.png> <./Ethanolmcconvergence1.png>] [12 <./Naturalgasmcconvergence1.
-png> <./Silvermcconvergence1.png>] [13 <./CrudeOilvol.png> <./Ethanolvol.png>] 
-[14 <./Goldvol.png> <./Naturalgasvol.png>] [15 <./Silvervol.png>] [16
+ [9
+
+ <./priceCorrelation.jpg>] [10 <./logRtCorrelation.jpg>]
+[11 <./Curdeoilmcconvergence1.png> <./Ethanolmcconvergence1.png>] [12 <./Natura
+lgasmcconvergence1.png> <./Silvermcconvergence1.png>] [13 <./CrudeOilvol.png> <
+./Ethanolvol.png>] [14 <./Goldvol.png> <./Naturalgasvol.png>] [15 <./Silvervol.
+png>] [16
 
 ]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-(corr.py) (binomialTreePricer.py [17
+ (./corr.py) (./binomialTreePricer.py [17
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18])
-(biTreePriceSimulation.py [19]) (garchPricer.py [20]
+(./biTreePriceSimulation.py [19]) (./garchPricer.py [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
@@ -1639,50 +1558,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [25])
 
 AED: lastpage setting LastPage
-[26] (main.aux)
+[26] (./main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20159 strings out of 492945
- 333164 string characters out of 3126696
- 1256662 words of memory out of 3000000
- 23507 multiletter control sequences out of 15000+200000
- 133418 words of font info for 198 fonts, out of 3000000 for 9000
+ 20162 strings out of 492616
+ 326914 string characters out of 6133219
+ 1258345 words of memory out of 5000000
+ 23530 multiletter control sequences out of 15000+600000
+ 133794 words of font info for 201 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,17n,80p,1269b,1825s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\e
-ctt0800.pk>{C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/xch
-arter/xch_q7u3cc.enc}{C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/xcharter/xch_tuu2ww.enc}{C:/Users/User/AppData/Local/Programs/MiKTeX 2.9
-/fonts/enc/dvips/xcharter/xch_a3psji.enc}{C:/Users/User/AppData/Local/Programs/
-MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/User/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Users/User/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Us
-ers/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter
--Roman.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/User/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/User/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/U
-ser/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-<C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr5.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/User/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/User/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
-Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/h
-elvetic/uhvb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (26 pages, 1363851 bytes).
+ 42i,17n,80p,1267b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
+ive/2019/texmf-dist/fonts/enc/dvips/xcharter/xch_q7u3cc.enc}{c:/texlive/2019/te
+xmf-dist/fonts/enc/dvips/xcharter/xch_tuu2ww.enc}{c:/texlive/2019/texmf-dist/fo
+nts/enc/dvips/xcharter/xch_a3psji.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvi
+ps/base/8r.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter
+-Bold.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter-Ital
+ic.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.p
+fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/201
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
+fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
+per/sftt0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pf
+b><c:/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (26 pages, 1361672 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  38968 words of extra memory for PDF output out of 42996 (max. 10000000)
 

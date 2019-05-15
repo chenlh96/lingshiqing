@@ -119,7 +119,7 @@ In this project, 16 commodities from 3 broad categories, namely energy, agricult
 
 \subsection{Asian Options}
 
-Asian option, also named average value option, is one of the most popular path dependent options among derivative traders.Its payoff is determined by the average underlying price over some pre-set period of time. The average price of the underlying asset can either determine the underlying settlement price or the option strike price. This is different from the case of usual European options and American options, whose payoff depends on underlying price at the exercise date. Hence Asian option is a typical form of exotic options. These exotic features provide risk reduction of market manipulation of the underlying instrument close to maturity \citep{kemna1990pricing}. On top of that, the cost of Asian options is usually much lower than European or American options with same strike and maturity.
+Asian option, also named average value option, is one of the most popular path dependent options among derivative traders. Its payoff is determined by the average underlying price over some pre-set period of time. The average price of the underlying asset can either determine the underlying settlement price or the option strike price. This is different from the case of usual European options and American options, whose payoff depends on underlying price at the exercise date. Hence Asian option is a typical form of exotic options. These exotic features provide risk reduction of market manipulation of the underlying instrument close to maturity \citep{kemna1990pricing}. On top of that, the cost of Asian options is usually much lower than European or American options with same strike and maturity.
 
 Suppose $S_t$ is the underlying price at time $t$, $A_T(0, T)$ is the arithmetic average underlying price at maturity $T$, then we have
 
@@ -173,7 +173,7 @@ In equation \ref{eq:4}, $r_{t_i}$ is the yield of a treasury instrument maturing
 
 The binomial tree model uses tree structure to simulate the path of the underlying asset over the whole life of Asian option and applies the forward shooting grid method to avoid the exponential growth of average price. In this case, we add extra grids to record the possible average price and restrict the number of possible average price to be linear growth. To update the average value when the asset value jumps, we use gird function to determine the updated average price.
 
-Under Blace-Schole world, we assume that the volatility of asset value is constant. For the binomial tree, let the jump factor $ u, d $ to be $ u=\exp(\sigma\sqrt{\Delta t}), d=\exp(-\sigma\sqrt{\Delta t}) $ where $ \sigma $ is constant volatility, and $ \Delta t $ is the time step. 
+Under Black-Scholes world, we assume that the volatility of asset value is constant. For the binomial tree, let the jump factor $ u, d $ to be $ u=\exp(\sigma\sqrt{\Delta t}), d=\exp(-\sigma\sqrt{\Delta t}) $ where $ \sigma $ is constant volatility, and $ \Delta t $ is the time step. 
 
 Denote $ S^n_j $ and $ A^n_k $ to be the asset value jumping upward $ j $ times and average price with index $ k $ at $ n $-th time level, respectively. To restrict the possible values for $ F $ to a certain set of predetermined values, we limit the number of averaging values to some multiple of the number of values assumed by the asset price: Assume the coefficient to be $ 1 / \rho \in \mathbb{N} $. For a given time step $ \Delta t $, we let the asset value $ S^n_j $ and the average value $ A^n_k $ to be:
 \begin{equation}
@@ -378,9 +378,9 @@ Correlation analysis is a method of statistical evaluation used to study the str
 
 \begin{equation} \label{eq:correlation}
 \begin{aligned}
-\rho_{xy} &= \frac {\sum_{i=1}^n (x_i-\bar x)(y_i-\bar y}{(n-1)s_xs_y}
+\rho_{xy} &= \frac {\sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)}{(n-1)s_xs_y}
 \\
-&=\frac {\sum_{i=1}^n (x_i-\bar x)(y_i-\bar y}{\sqrt{\sum_{i=1}^n(x_i - \bar x)^2 \sum_{i=1}^n(y_i - \bar y)^2}}
+&=\frac {\sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)}{\sqrt{\sum_{i=1}^n(x_i - \bar x)^2 \sum_{i=1}^n(y_i - \bar y)^2}}
 \end{aligned}
 \end{equation}
 
@@ -478,17 +478,16 @@ From table \ref{PS}, we can conclude that all the value from our model are ratio
 \section{Discussions}
 
 \subsection{Data Limitations}
-Commodity futures are the assessment of raw materials trading on an open market. They are estimates of the value of future commodities, not the spot price. The difference between the two prices will also be affected by delivery time, risk-free rate and storage cost. Therefore, it is inaccurate to replace the commodity price with the futures price.
+Commodity futures are the assessment of raw materials trading in open market. Future prices are essentially estimates for the value of future commodities, instead of the spot price. The difference between two prices, say future price and spot price, will be affected by delivery time, risk-free rate, storage cost and convenience yield. Therefore, it will bring inaccuracies into the pricing process when using futures price not the commodity spot prices.
 
-Due to the limitations of the data, we cannot find the Asian option strike price for all five commodity option contracts. We only find WTI Crude Oil Asian Option price and Chicago Ethanol (Platts) Asian Option price. The rest is replaced by American or European options, but their specifications are used to construct numerical examples for the pricing models.
+Besides, only WTI Crude Oil Asian option and Chicago Ethanol (Platts) Asian option are Asian options and all the rest options are either American or European options, specifications of which are used to construct numerical examples for the proposed pricing models. In future studies, more traded Asian options settings should be collected to examine these models.
 
-The price of Chicago Ethanol (Platinum) futures has a lot of duplicate prices on the adjacent date in the early stage, resulting in a lot of zero log returns. There is no fitted GJR-GARCH model for it, but ARIMA(0,0,1) is adequate for it, we will consider combining ARIMA with GARCH to predict its future price trend in the future.
+\subsection{Model Limitations}
+Chicago Ethanol (Platinum) futures has many duplicate prices on adjacent dates in the early stage, resulting in zero log returns. Moreover, there is no fitted GJR-GARCH model for it, and GJR-GARCH(1,1,1) is used to fit its time series of log returns. However, ARIMA(0,0,1) can sufficiently explain the time series, we may consider applying ARIMA GARCH to fit the historical data and embedding into Monte Carlo scheme in further studies.
 
 \subsection{Monte Carlo Limitations}
 
-In the project, although Monte Carlo simulations are executed for about 319 times, the output shows that the standard deviation is a relative large, indicating that the number of paths might not be enough.  As for Monte Carlo simulation itself, we may get a partial solution in the simulation, for it may take million times to get a great output but we can only do thousand times.
-
-Also, Monte Carlo simulation requires a large number of data. When data are insufficient, we may be forced to use subjective judgment to establish some of the probability distributions. And under this circumstance, we need to take correlations into consideration as well. When this happens, we may use a new method called Probability Bounds Analysis (PBA). With PBA, lack of data can give you upper and lower bounds that are far apart, but it does indicate just how bad the risk could be. Whereas Monte Carlo simulation will often underestimate the risk.
+In Monte Carlo GARCH method, although Monte Carlo simulations are executed 10000 times, the standard deviation of payoffs generated is relatively large compared to constant volatility Monte Carlo method. This indicates that the number of paths might not be enough. Hence in GARCH Monte Carlo simulations, the final payoff could be a partial solution, and it may take million paths to obtain an output with lower variance. On top of that, the payoff variance from the proposed GARCH Monte Carlo simulation might underestimate the real variance, especially when the number of simulated path is insufficient. In this case, probability bounds analysis (PBA) can be implemented as an examination for partial information. Using PBA, the sparse simulations will provide far-apart upper and lower bounds, and this will well estimate the risk in pricing results.
 
 \subsection{Advanced GARCH Models}
 
@@ -513,10 +512,10 @@ In this report, 16 commodity future prices are studied, and 5 options of them ar
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
-\onecolumn
 \printbibliography[title={References}] % Print the bibliography, section title in curly brackets
 
 %----------------------------------------------------------------------------------------
+\onecolumn
 \newpage
 \section{Appendices}
 \subsection{Figures}

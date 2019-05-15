@@ -4,6 +4,8 @@
 Created on Fri Apr  5 17:22:55 2019
 
 @author: lueshen
+
+get_best_model function is based on a script from Chu Song
 """
 
 import pandas as pd
